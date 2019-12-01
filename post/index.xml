@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Posts on Dream</title>
     <link>http://Virigl-N.github.io/post/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content in Posts on Dream</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Dec 2019 11:29:31 +0800</lastBuildDate>
@@ -17,7 +17,8 @@
       <pubDate>Sun, 01 Dec 2019 11:29:31 +0800</pubDate>
       
       <guid>http://Virigl-N.github.io/post/mywords/</guid>
-      <description>funcTheWorld</description>
+      <description>FuncTheWorld.
+ title: &amp;ldquo;Again&amp;rdquo; date: 2019 draft: false Nobody Knows.</description>
     </item>
     
   </channel>
