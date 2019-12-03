@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Dream</title>
-    <link>http://Virigl-N.github.io/post/</link>
+    <link>https://funcTheWorld.github.io/post/</link>
     <description>Recent content in Posts on Dream</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Dec 2019 12:43:58 +0800</lastBuildDate>
     
-	<atom:link href="http://Virigl-N.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://funcTheWorld.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Dream</title>
-      <link>http://Virigl-N.github.io/post/dream/</link>
+      <link>https://funcTheWorld.github.io/post/dream/</link>
       <pubDate>Sun, 01 Dec 2019 12:43:58 +0800</pubDate>
       
-      <guid>http://Virigl-N.github.io/post/dream/</guid>
+      <guid>https://funcTheWorld.github.io/post/dream/</guid>
       <description>Dying&amp;hellip;</description>
     </item>
     
     <item>
       <title>MyWords</title>
-      <link>http://Virigl-N.github.io/post/mywords/</link>
+      <link>https://funcTheWorld.github.io/post/mywords/</link>
       <pubDate>Sun, 01 Dec 2019 11:29:31 +0800</pubDate>
       
-      <guid>http://Virigl-N.github.io/post/mywords/</guid>
+      <guid>https://funcTheWorld.github.io/post/mywords/</guid>
       <description>FuncTheWorld. Nobody Knows.</description>
     </item>
     
