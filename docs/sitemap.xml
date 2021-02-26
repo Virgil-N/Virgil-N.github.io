@@ -1,1 +1,95 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://Virgil-N.github.io/posts/image-zoom-sample/</loc><lastmod>2017-04-01T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/posts/migrate-from-jekyll/</loc><lastmod>2014-03-10T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/</loc><lastmod>2017-04-01T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/posts/</loc><lastmod>2017-04-01T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/about/</loc><lastmod>2014-04-09T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/posts/goisforlovers/</loc><lastmod>2014-04-02T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/categories/</loc><lastmod>2014-04-02T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/categories/development/</loc><lastmod>2014-04-02T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/tags/development/</loc><lastmod>2014-04-02T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/posts/hugoisforlovers/</loc><lastmod>2014-04-02T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/tags/go/</loc><lastmod>2014-04-02T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/tags/golang/</loc><lastmod>2014-04-02T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/categories/golang/</loc><lastmod>2014-04-02T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/tags/hugo/</loc><lastmod>2014-04-02T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/tags/</loc><lastmod>2014-04-02T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/tags/templates/</loc><lastmod>2014-04-02T00:00:00+00:00</lastmod></url><url><loc>https://Virgil-N.github.io/tags/themes/</loc><lastmod>2014-04-02T00:00:00+00:00</lastmod></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://Virgil-N.github.io/posts/image-zoom-sample/</loc>
+    <lastmod>2017-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/posts/migrate-from-jekyll/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/posts/helloworld/</loc>
+    <lastmod>2021-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/</loc>
+    <lastmod>2021-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/posts/</loc>
+    <lastmod>2021-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/about/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/posts/goisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/categories/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/categories/development/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/tags/development/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/posts/hugoisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/tags/go/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/tags/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/categories/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/tags/hugo/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/tags/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/tags/templates/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Virgil-N.github.io/tags/themes/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+</urlset>
