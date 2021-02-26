@@ -2,22 +2,29 @@
 <!DOCTYPE html>
 <html lang="en" data-figures="" class="page">
   <head>
-<title>Migrate to Hugo from Jekyll | My New Hugo Site</title>
+<title>Migrate to Hugo from Jekyll | Clarity</title>
 <meta charset="utf-8">
 <meta name="generator" content="Hugo 0.80.0" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script async src="https://www.googletagmanager.com/gtag/js?id=XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'XXXXXXXXXX');
+</script>
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
 <meta name="description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content …">
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:creator" content="Your Twitter username">
+<meta name="twitter:creator" content="@janedoe">
 <meta name="twitter:title" content="Migrate to Hugo from Jekyll" />
 <meta property="og:url" content="https://Virgil-N.github.io/posts/migrate-from-jekyll/" />
 <meta property="og:title" content="Migrate to Hugo from Jekyll" />
 <meta property="og:description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content …" />
-<meta property="og:image" content="https://Virgil-N.github.io" />
+<meta property="og:image" content="https://Virgil-N.github.io/images/thumbnail.png" />
 <link rel="apple-touch-icon" sizes="180x180" href='https://Virgil-N.github.io/icons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://Virgil-N.github.io/icons/favicon-32x32.png'>
 <link rel="manifest" href='https://Virgil-N.github.io/icons/site.webmanifest'>
@@ -31,23 +38,23 @@
 
     
     
-    <link rel="preload" href="https://Virgil-N.github.io/css/styles.2b3290fc6e94839826981c23ed76e1831472bd3f8af68332da00b97d9430b56bfb7e9394d5c09aca633c093c621709cdd745eec940be733933ac5d876223de52.css" integrity = "sha512-KzKQ/G6Ug5gmmBwj7XbhgxRyvT&#43;K9oMy2gC5fZQwtWv7fpOU1cCaymM8CTxiFwnN10XuyUC&#43;czkzrF2HYiPeUg==" as="style" crossorigin="anonymous">
-    <link rel="preload" href="https://Virgil-N.github.io/js/bundle.min.58599ea7714ba6dbf19e4e3a21982bcefa7b274443279a8d2927595ec10542151d44b98dbb56873c44c076d923404a9f64a340f15782c2f158a827129463fe73.js" as="script" integrity=
-    "sha512-WFmep3FLptvxnk46IZgrzvp7J0RDJ5qNKSdZXsEFQhUdRLmNu1aHPETAdtkjQEqfZKNA8VeCwvFYqCcSlGP&#43;cw==" crossorigin="anonymous">
+    <link rel="preload" href="https://Virgil-N.github.io/css/styles.782bf96a82b3cc5b3cee4c47a42cc81321f16960a6d41fab3277c4abe047bc7ae044ea1bb7ae4d237c12baa0143e02f95969e5e8b6e68d9dcfd14158cfa244ac.css" integrity = "sha512-eCv5aoKzzFs87kxHpCzIEyHxaWCm1B&#43;rMnfEq&#43;BHvHrgROobt65NI3wSuqAUPgL5WWnl6LbmjZ3P0UFYz6JErA==" as="style" crossorigin="anonymous">
+    <link rel="preload" href="https://Virgil-N.github.io/js/bundle.min.c1ffd353a8e6137b6a97ed848f74e7a72759604fe5e4bcf8872ac09b11d8287f8d1befb5965fabb090235c26956b5c129170677532e73dd7340edb9fc1bc6303.js" as="script" integrity=
+    "sha512-wf/TU6jmE3tql&#43;2Ej3TnpydZYE/l5Lz4hyrAmxHYKH&#43;NG&#43;&#43;1ll&#43;rsJAjXCaVa1wSkXBndTLnPdc0DtufwbxjAw==" crossorigin="anonymous">
 
     
-    <link rel="stylesheet" type="text/css" href="https://Virgil-N.github.io/css/styles.2b3290fc6e94839826981c23ed76e1831472bd3f8af68332da00b97d9430b56bfb7e9394d5c09aca633c093c621709cdd745eec940be733933ac5d876223de52.css" integrity="sha512-KzKQ/G6Ug5gmmBwj7XbhgxRyvT&#43;K9oMy2gC5fZQwtWv7fpOU1cCaymM8CTxiFwnN10XuyUC&#43;czkzrF2HYiPeUg==" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://Virgil-N.github.io/css/styles.782bf96a82b3cc5b3cee4c47a42cc81321f16960a6d41fab3277c4abe047bc7ae044ea1bb7ae4d237c12baa0143e02f95969e5e8b6e68d9dcfd14158cfa244ac.css" integrity="sha512-eCv5aoKzzFs87kxHpCzIEyHxaWCm1B&#43;rMnfEq&#43;BHvHrgROobt65NI3wSuqAUPgL5WWnl6LbmjZ3P0UFYz6JErA==" crossorigin="anonymous">
     
   </head>
   
   
     
   
-  <body data-code="100" data-lines="false" id="documentTop">
+  <body data-code="7" data-lines="false" id="documentTop">
 
 <header class="nav_header" >
-  <nav class="nav"><a href='https://Virgil-N.github.io' class="nav_brand nav_item" title="My New Hugo Site">
-  <img src="https://Virgil-N.github.io/path/to/logo" class="logo" alt="My New Hugo Site">
+  <nav class="nav"><a href='https://Virgil-N.github.io' class="nav_brand nav_item" title="Clarity">
+  <img src="https://Virgil-N.github.io/logos/logo.png" class="logo" alt="Clarity">
   <div class="nav_close">
     <div><svg class="icon">
   <use xlink:href="#open-menu"></use>
@@ -56,23 +63,63 @@
 </svg></div>
   </div>
 </a>
-    <div class='nav_body nav_body_'>
+    <div class='nav_body nav_body_left'>
       
       
       
         
 
   <div class="nav_parent">
-    <a href="https://Virgil-N.github.io/" class="nav_item" title="Blog">Blog </a>
+    <a href="https://Virgil-N.github.io" class="nav_item" title="Home">Home </a>
   </div>
   <div class="nav_parent">
-    <a href="https://Virgil-N.github.io/about" class="nav_item" title="About">About </a>
+    <a href="https://Virgil-N.github.io/post/rich-content/" class="nav_item" title="Archives">Archives </a>
   </div>
   <div class="nav_parent">
-    <a href="https://Virgil-N.github.io" class="nav_item" title="Theme">Theme </a>
+    <a href="https://Virgil-N.github.io" class="nav_item" title="Links">Links <img src='https://Virgil-N.github.io/icons/caret-icon.svg' alt="icon" class="nav_icon"></a>
+    <div class="nav_sub">
+      <span class="nav_child"></span>
+        <a href="https://www.linkedin.com/" class="nav_child nav_item" title="LinkedIn">LinkedIn</a>
+        <a href="https://twitter.com/" class="nav_child nav_item" title="Twitter">Twitter</a>
+    </div>
+  </div>
+  <div class="nav_parent">
+    <a href="https://Virgil-N.github.io/about/" class="nav_item" title="About">About </a>
   </div>
       
+      <div class="nav_parent">
+        <a href="#" class="nav_item">🌐</a>
+        <div class="nav_sub">
+          <span class="nav_child"></span>
+          
+          <a href="https://Virgil-N.github.io/" class="nav_child nav_item">English</a>
+          
+          <a href="https://Virgil-N.github.io/pt/" class="nav_child nav_item">Português</a>
+          
+        </div>
+      </div>
 <div class='follow'>
+  <a href="https://github.com/#">
+    <svg class="icon">
+  <use xlink:href="#github"></use>
+</svg>
+  </a>
+  <a href="https://twitter.com/#">
+    <svg class="icon">
+  <use xlink:href="#twitter"></use>
+</svg>
+  </a>
+  <a href="https://www.linkedin.com/in/#">
+    <svg class="icon">
+  <use xlink:href="#linkedin"></use>
+</svg>
+  </a>
+    
+  <a href="https://Virgil-N.github.io/index.xml">
+    <svg class="icon">
+  <use xlink:href="#rss"></use>
+</svg>
+  </a>
 <div class="color_mode">
   <input type="checkbox" class="color_choice" id="mode">
 </div>
@@ -135,11 +182,11 @@ With Jekyll, something that looked like</p>
         ▾ images/
             logo.png
 </code></pre>
-<p>Additionally, you&rsquo;ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p>
+<p>Additionally, you'll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p>
 <h2 id="create-your-hugo-configuration-file">Create your Hugo configuration file</h2>
 <p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="/overview/configuration/">Hugo configuration documentation</a> for details.</p>
 <h2 id="set-your-configuration-publish-folder-to-_site">Set your configuration publish folder to <code>_site</code></h2>
-<p>The default is for Jekyll to publish to <code>_site</code> and for Hugo to publish to <code>public</code>. If, like me, you have <a href="http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html"><code>_site</code> mapped to a git submodule on the <code>gh-pages</code> branch</a>, you&rsquo;ll want to do one of two alternatives:</p>
+<p>The default is for Jekyll to publish to <code>_site</code> and for Hugo to publish to <code>public</code>. If, like me, you have <a href="http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html"><code>_site</code> mapped to a git submodule on the <code>gh-pages</code> branch</a>, you'll want to do one of two alternatives:</p>
 <ol>
 <li>
 <p>Change your submodule to point to map <code>gh-pages</code> to public instead of <code>_site</code> (recommended).</p>
@@ -159,13 +206,13 @@ With Jekyll, something that looked like</p>
 </li>
 </ol>
 <h2 id="convert-jekyll-templates-to-hugo-templates">Convert Jekyll templates to Hugo templates</h2>
-<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="/layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
+<p>That's the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll's template documentation</a> if you need to refresh your memory on how you built your blog and <a href="/layout/templates/">Hugo's template</a> to learn Hugo's way.</p>
 <p>As a single reference data point, converting my templates for <a href="http://heyitsalex.net/">heyitsalex.net</a> took me no more than a few hours.</p>
 <h2 id="convert-jekyll-plugins-to-hugo-shortcodes">Convert Jekyll plugins to Hugo shortcodes</h2>
-<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="/doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
+<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="/doc/shortcodes/">shortcodes</a>. It's fairly trivial to do a port.</p>
 <h3 id="implementation">Implementation</h3>
 <p>As an example, I was using a custom <a href="https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb"><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.</p>
-<p>Jekyll&rsquo;s plugin:</p>
+<p>Jekyll's plugin:</p>
 <pre><code>module Jekyll
   class ImageTag &lt; Liquid::Tag
     @url = nil
@@ -252,25 +299,48 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 <h3 id="fix-content">Fix content</h3>
 <p>Depending on the amount of customization that was done with each post with Jekyll, this step will require more or less effort. There are no hard and fast rules here except that <code>hugo server --watch</code> is your friend. Test your changes and fix errors as needed.</p>
 <h3 id="clean-up">Clean up</h3>
-<p>You&rsquo;ll want to remove the Jekyll configuration at this point. If you have anything else that isn&rsquo;t used, delete it.</p>
+<p>You'll want to remove the Jekyll configuration at this point. If you have anything else that isn't used, delete it.</p>
 <h2 id="a-practical-example-in-a-diff">A practical example in a diff</h2>
-<p><a href="http://heyitsalex.net/">Hey, it&rsquo;s Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this <a href="https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610">diff</a>.</p>
+<p><a href="http://heyitsalex.net/">Hey, it's Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this <a href="https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610">diff</a>.</p>
 
 
   </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     
+      <h2>Jane Doe</h2>
+      <div class="sidebar_description">
+        Technologist, perpetual student, teacher, continual incremental improvement.
+      </div>
+      <a href='https://Virgil-N.github.io/about/' class="button mt-1" role="button" title='Read More'>Read More</a>
+    <h2 class="mt-4">Featured Posts</h2>
+    <ul>
+      <li>
+        <a href="https://Virgil-N.github.io/post/helloworld/" class="nav-link" title="Test">Test</a>
+      </li>
+      <li>
+        <a href="https://Virgil-N.github.io/post/markdown-syntax/" class="nav-link" title="Markdown Syntax Guide">Markdown Syntax Guide</a>
+      </li>
+    </ul>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://Virgil-N.github.io/posts/helloworld/" class="nav-link" title="HelloWorld">HelloWorld</a>
+        <a href="https://Virgil-N.github.io/post/helloworld/" class="nav-link" title="Test">Test</a>
       </li>
       <li>
-        <a href="https://Virgil-N.github.io/posts/goisforlovers/" class="nav-link" title="(Hu)go Template Primer">(Hu)go Template Primer</a>
+        <a href="https://Virgil-N.github.io/post/markdown-syntax/" class="nav-link" title="Markdown Syntax Guide">Markdown Syntax Guide</a>
       </li>
       <li>
-        <a href="https://Virgil-N.github.io/posts/hugoisforlovers/" class="nav-link" title="Getting Started with Hugo">Getting Started with Hugo</a>
+        <a href="https://Virgil-N.github.io/post/rich-content/" class="nav-link" title="Rich Content">Rich Content</a>
+      </li>
+      <li>
+        <a href="https://Virgil-N.github.io/post/placeholder-text/" class="nav-link" title="Placeholder Text">Placeholder Text</a>
+      </li>
+      <li>
+        <a href="https://Virgil-N.github.io/post/math-typesetting/" class="nav-link" title="Math Typesetting">Math Typesetting</a>
+      </li>
+      <li>
+        <a href="https://Virgil-N.github.io/post/emoji-support/" class="nav-link" title="Emoji Support">Emoji Support</a>
       </li>
     </ul>
     <div>
@@ -286,14 +356,55 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
           <span class="button_tally">2</span>
         </a>
         
+        <a href='https://Virgil-N.github.io/categories/syntax/' class="post_tag button button_translucent" title="syntax">
+          SYNTAX
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://Virgil-N.github.io/categories/themes/' class="post_tag button button_translucent" title="themes">
+          THEMES
+          <span class="button_tally">2</span>
+        </a>
+        
+        
+      </nav>
+    </div>
+    <div>
+      <h2 class="mt-4 taxonomy" id="series-section">Series</h2>
+      <nav class="tags_nav">
+        <a href='https://Virgil-N.github.io/series/themes-guide/' class="post_tag button button_translucent" title="themes-guide">
+          THEMES-GUIDE
+          <span class="button_tally">2</span>
+        </a>
+        
         
       </nav>
     </div>
     <div>
       <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
       <nav class="tags_nav">
+        <a href='https://Virgil-N.github.io/tags/markdown/' class="post_tag button button_translucent" title="markdown">
+          MARKDOWN
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://Virgil-N.github.io/tags/themes/' class="post_tag button button_translucent" title="themes">
+          THEMES
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://Virgil-N.github.io/tags/css/' class="post_tag button button_translucent" title="css">
+          CSS
+          <span class="button_tally">2</span>
+        </a>
+        
         <a href='https://Virgil-N.github.io/tags/development/' class="post_tag button button_translucent" title="development">
           DEVELOPMENT
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://Virgil-N.github.io/tags/featured/' class="post_tag button button_translucent" title="featured">
+          FEATURED
           <span class="button_tally">2</span>
         </a>
         
@@ -307,8 +418,33 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
           <span class="button_tally">2</span>
         </a>
         
+        <a href='https://Virgil-N.github.io/tags/html/' class="post_tag button button_translucent" title="html">
+          HTML
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://Virgil-N.github.io/tags/emoji/' class="post_tag button button_translucent" title="emoji">
+          EMOJI
+          <span class="button_tally">1</span>
+        </a>
+        
         <a href='https://Virgil-N.github.io/tags/hugo/' class="post_tag button button_translucent" title="hugo">
           HUGO
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://Virgil-N.github.io/tags/index/' class="post_tag button button_translucent" title="index">
+          INDEX
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://Virgil-N.github.io/tags/privacy/' class="post_tag button button_translucent" title="privacy">
+          PRIVACY
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://Virgil-N.github.io/tags/shortcodes/' class="post_tag button button_translucent" title="shortcodes">
+          SHORTCODES
           <span class="button_tally">1</span>
         </a>
         
@@ -317,12 +453,78 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
           <span class="button_tally">1</span>
         </a>
         
-        <a href='https://Virgil-N.github.io/tags/themes/' class="post_tag button button_translucent" title="themes">
-          THEMES
-          <span class="button_tally">1</span>
-        </a>
         
-        
+        <br>
+        <div class="post_tags_toggle button">All Tags</div>
+        <div class="post_tags">
+          <div class="tags_list">
+            
+            <a href='https://Virgil-N.github.io/tags/css/' class=" post_tag button button_translucent" data-position=2 title="css">CSS<span class="button_tally">2</span>
+            </a>
+            
+            
+            <a href='https://Virgil-N.github.io/tags/development/' class=" post_tag button button_translucent" data-position=2 title="development">DEVELOPMENT<span class="button_tally">2</span>
+            </a>
+            
+            
+            <a href='https://Virgil-N.github.io/tags/emoji/' class=" post_tag button button_translucent" data-position=1 title="emoji">EMOJI<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://Virgil-N.github.io/tags/featured/' class=" post_tag button button_translucent" data-position=2 title="featured">FEATURED<span class="button_tally">2</span>
+            </a>
+            
+            
+            <a href='https://Virgil-N.github.io/tags/go/' class=" post_tag button button_translucent" data-position=2 title="go">GO<span class="button_tally">2</span>
+            </a>
+            
+            
+            <a href='https://Virgil-N.github.io/tags/golang/' class=" post_tag button button_translucent" data-position=2 title="golang">GOLANG<span class="button_tally">2</span>
+            </a>
+            
+            
+            <a href='https://Virgil-N.github.io/tags/html/' class=" post_tag button button_translucent" data-position=2 title="html">HTML<span class="button_tally">2</span>
+            </a>
+            
+            
+            <a href='https://Virgil-N.github.io/tags/hugo/' class=" post_tag button button_translucent" data-position=1 title="hugo">HUGO<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://Virgil-N.github.io/tags/index/' class=" post_tag button button_translucent" data-position=1 title="index">INDEX<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://Virgil-N.github.io/tags/markdown/' class=" post_tag button button_translucent" data-position=3 title="markdown">MARKDOWN<span class="button_tally">3</span>
+            </a>
+            
+            
+            <a href='https://Virgil-N.github.io/tags/privacy/' class=" post_tag button button_translucent" data-position=1 title="privacy">PRIVACY<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://Virgil-N.github.io/tags/shortcodes/' class=" post_tag button button_translucent" data-position=1 title="shortcodes">SHORTCODES<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://Virgil-N.github.io/tags/templates/' class=" post_tag button button_translucent" data-position=1 title="templates">TEMPLATES<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://Virgil-N.github.io/tags/text/' class=" post_tag button button_translucent" data-position=1 title="text">TEXT<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://Virgil-N.github.io/tags/themes/' class=" post_tag button button_translucent" data-position=3 title="themes">THEMES<span class="button_tally">3</span>
+            </a>
+            
+            <div class="tags_sort"><span title="sort alphabetically">[A~Z]</span><span title="sort by count">[0~9]</span>
+            </div>
+            <span class="tags_hide"><svg class="icon">
+            <use xlink:href="#closeme"></use>
+          </svg></span>
+          </div>
+        </div>
       </nav>
     </div>
   </section>
@@ -395,8 +597,8 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 
 <footer class="footer">
   <div class="footer_inner wrap pale">
-    <img src='https://Virgil-N.github.io/icons/apple-touch-icon.png' class="icon icon_2 transparent" alt="My New Hugo Site">
-    <p>Copyright&nbsp;<span class="year"></span>&nbsp;MY NEW HUGO SITE. All Rights Reserved</p><a class="to_top" href="#documentTop">
+    <img src='https://Virgil-N.github.io/icons/apple-touch-icon.png' class="icon icon_2 transparent" alt="Clarity">
+    <p>Copyright&nbsp;<span class="year"></span>&nbsp;CLARITY. All Rights Reserved</p><a class="to_top" href="#documentTop">
   <svg class="icon">
   <use xlink:href="#arrow"></use>
 </svg>
@@ -405,7 +607,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
   </div>
 </footer>
 
-    <script type="text/javascript" src="https://Virgil-N.github.io/js/bundle.min.58599ea7714ba6dbf19e4e3a21982bcefa7b274443279a8d2927595ec10542151d44b98dbb56873c44c076d923404a9f64a340f15782c2f158a827129463fe73.js" integrity="sha512-WFmep3FLptvxnk46IZgrzvp7J0RDJ5qNKSdZXsEFQhUdRLmNu1aHPETAdtkjQEqfZKNA8VeCwvFYqCcSlGP&#43;cw==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://Virgil-N.github.io/js/bundle.min.c1ffd353a8e6137b6a97ed848f74e7a72759604fe5e4bcf8872ac09b11d8287f8d1befb5965fabb090235c26956b5c129170677532e73dd7340edb9fc1bc6303.js" integrity="sha512-wf/TU6jmE3tql&#43;2Ej3TnpydZYE/l5Lz4hyrAmxHYKH&#43;NG&#43;&#43;1ll&#43;rsJAjXCaVa1wSkXBndTLnPdc0DtufwbxjAw==" crossorigin="anonymous"></script>
     
   </body>
 </html>

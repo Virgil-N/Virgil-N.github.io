@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shortcodes on Clarity</title>
+    <link>https://Virgil-N.github.io/tags/shortcodes/</link>
+    <description>Recent content in shortcodes on Clarity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Virgil-N.github.io/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rich Content</title>
+      <link>https://Virgil-N.github.io/post/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Virgil-N.github.io/post/rich-content/</guid>
+      <description>
+        
+          &lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;instagram-simple-shortcode&#34;&gt;Instagram Simple Shortcode&lt;/h2&gt;
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;youtube-privacy-enhanced-shortcode&#34;&gt;YouTube Privacy Enhanced Shortcode&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZJthWmvUzzc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;twitter-simple-shortcode&#34;&gt;Twitter Simple Shortcode&lt;/h2&gt;
+
+
+
+
+&lt;style type=&#34;text/css&#34;&gt;
+  .twitter-tweet {
+  font: 14px/1.45 -apple-system,BlinkMacSystemFont,&#34;Segoe UI&#34;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#34;Helvetica Neue&#34;,sans-serif;
+  border-left: 4px solid #2b7bb9;
+  padding-left: 1.5em;
+  color: #555;
+}
+  .twitter-tweet a {
+  color: #2b7bb9;
+  text-decoration: none;
+}
+  blockquote.twitter-tweet a:hover,
+  blockquote.twitter-tweet a:focus {
+  text-decoration: underline;
+}
+&lt;/style&gt;
+
+
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;vimeo-simple-shortcode&#34;&gt;Vimeo Simple Shortcode&lt;/h2&gt;
+
+
+
+
+
+
+&lt;style&gt;
+.__h_video {
+   position: relative;
+   padding-bottom: 56.23%;
+   height: 0;
+   overflow: hidden;
+   width: 100%;
+   background: #000;
+}
+.__h_video img {
+   width: 100%;
+   height: auto;
+   color: #000;
+}
+.__h_video .play {
+   height: 72px;
+   width: 72px;
+   left: 50%;
+   top: 50%;
+   margin-left: -36px;
+   margin-top: -36px;
+   position: absolute;
+   cursor: pointer;
+}
+&lt;/style&gt;
+
+
+&lt;div class=&#34;s_video_simple __h_video&#34;&gt;
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
