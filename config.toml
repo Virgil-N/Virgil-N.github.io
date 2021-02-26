@@ -42,24 +42,14 @@ buildfuture = true
     weight = 1
 
 [[menu.main]]
-    name = "Post"
-    url = "/post"
-    weight = 2
-
-[[menu.main]]
     name = "About"
     url = "/about"
-    weight = 3
+    weight = 2
 
 [[menu.main]]
     identifier = "theme"
     name = "Theme"
-    weight = 4
-
-# 博客链接的路径格式
-[permalinks]
-  posts = "/:year/:month/:title/"
-  page = "/:slug/"
+    weight = 3
 
 [related]
   # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
@@ -83,6 +73,6 @@ buildfuture = true
   weight = 100
   [[related.indices]]
   name  = "date"
-  weight = 10
+  weight = 300
   pattern = "2017"
 
