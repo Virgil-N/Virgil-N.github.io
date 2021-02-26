@@ -9,6 +9,9 @@ theme = "potato-dark"
 publishDir = "docs"
 buildfuture = true
 
+[blackfriday]
+  extensions = ["hardLineBreak"]
+
 [params]
   paginate = 10
   # Social accounts. Link to these accounts are displayed in the header and
