@@ -6,9 +6,9 @@ draft: true
 
 # Hello World
 
-- 你好，世界！  
+- 你好，世界！
 
-```javascript
-console.log('Hello, World!')
-```
+  ```javascript
+    console.log('Hello, World!')
+  ```
 
