@@ -13,6 +13,7 @@ disqusShortname = ""
 ignoreErrors = ["error-remote-getjson"]
 publishDir = "docs"
 buildfuture = true
+metaDataFormat = "markdown"
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"
