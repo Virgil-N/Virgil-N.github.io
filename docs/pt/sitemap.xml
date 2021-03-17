@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://Virgil-N.github.io/pt/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
@@ -15,9 +14,7 @@
                 hreflang="pt"
                 href="https://Virgil-N.github.io/pt/about/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://Virgil-N.github.io/pt/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -29,9 +26,7 @@
                 hreflang="pt"
                 href="https://Virgil-N.github.io/pt/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://Virgil-N.github.io/pt/</loc>
     <xhtml:link
                 rel="alternate"
@@ -43,9 +38,7 @@
                 hreflang="pt"
                 href="https://Virgil-N.github.io/pt/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://Virgil-N.github.io/pt/series/</loc>
     <xhtml:link
                 rel="alternate"
@@ -57,9 +50,7 @@
                 hreflang="pt"
                 href="https://Virgil-N.github.io/pt/series/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://Virgil-N.github.io/pt/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -72,5 +63,4 @@
                 href="https://Virgil-N.github.io/pt/tags/"
                 />
   </url>
-  
 </urlset>
