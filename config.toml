@@ -3,6 +3,8 @@ metaDataFormat = 'yaml'
 title = '记录我的生活'
 theme = 'blist'
 
+publishDir = 'docs'
+buildDrafts = true
 DefaultContentLanguage = "zh"
 DefaultContentLanguageInSubdir = true
 [languages]

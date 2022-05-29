@@ -3,6 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://virgil-n.github.io/en/blog/</loc>
+    <lastmod>2022-05-29T12:47:34+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -12,6 +13,37 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://virgil-n.github.io/en/blog/"
+                />
+  </url><url>
+    <loc>https://virgil-n.github.io/en/blog/%E5%9E%83%E5%9C%BE%E5%88%86%E7%B1%BB/</loc>
+    <lastmod>2022-05-29T12:47:34+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://virgil-n.github.io/zh/blog/%E5%9E%83%E5%9C%BE%E5%88%86%E7%B1%BB/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://virgil-n.github.io/en/blog/%E5%9E%83%E5%9C%BE%E5%88%86%E7%B1%BB/"
+                />
+  </url><url>
+    <loc>https://virgil-n.github.io/en/</loc>
+    <lastmod>2022-05-29T12:47:34+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://virgil-n.github.io/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://virgil-n.github.io/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://virgil-n.github.io/en/"
                 />
   </url><url>
     <loc>https://virgil-n.github.io/en/categories/</loc>
@@ -46,23 +78,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://virgil-n.github.io/en/tags/"
-                />
-  </url><url>
-    <loc>https://virgil-n.github.io/en/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://virgil-n.github.io/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://virgil-n.github.io/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://virgil-n.github.io/en/"
                 />
   </url>
 </urlset>
