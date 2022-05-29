@@ -5,7 +5,13 @@
   <link rel="icon" href="{{ if (isset .Site.Params "favicon") }}{{ .Site.Params.favicon }}{{ else }}/favicon.ico{{ end }}">
 
   <title>
-    {{ block "title" . }} {{- .Title }} - {{ .Site.Title -}} {{ end }}
+    {{ block "title" . }}
+      {{ if eq "zh" .Page.Language.Lang }}
+        {{- .Title }} --- {{ .Site.Title -}}
+      {{ else }}
+        {{- .Title }} - {{ .Site.Title -}}
+      {{ end }}
+    {{ end }}
   </title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}" />
   {{- if .Keywords }}

@@ -1,6 +1,6 @@
 baseURL = 'https://virgil-n.github.io/'
 metaDataFormat = 'yaml'
-title = '记录我的生活'
+title = '在地球'
 theme = 'blist'
 
 publishDir = 'docs'
@@ -14,8 +14,8 @@ DefaultContentLanguageInSubdir = true
     languageCode = 'zh-CN'
     languageName = "简体中文"
     [languages.zh.params]
-      introTitle = "嗨! 我是Virgil N。"
-      introSubtitle = "26 y/o junior developer who enjoys social card games, blogging and painting"
+      introTitle = "嗨! 我是樛木。"
+      introSubtitle = "爱看美剧，爱编程，爱生活。"
       introPhoto = "/picture.jpg"
       logo = "/blist-logo.png"
     [[languages.zh.menu.main]]
@@ -43,7 +43,7 @@ DefaultContentLanguageInSubdir = true
     weight = 2
     languageName = "English"
     [languages.en.params]
-      introTitle = "Hey! I'm Katheryn Fox"
+      introTitle = "Hey! I'm Virgil N."
       introSubtitle = "26 y/o junior developer who enjoys social card games, blogging and painting"
       introPhoto = "/picture.jpg"
       logo = "/blist-logo.png"
