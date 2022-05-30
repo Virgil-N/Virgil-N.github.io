@@ -6,11 +6,7 @@
 
   <title>
     {{ block "title" . }}
-      {{ if eq "zh" .Page.Language.Lang }}
-        {{- .Title }} --- {{ .Site.Title -}}
-      {{ else }}
-        {{- .Title }} - {{ .Site.Title -}}
-      {{ end }}
+      {{- .Title }} - {{ .Site.Title -}}
     {{ end }}
   </title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}" />
