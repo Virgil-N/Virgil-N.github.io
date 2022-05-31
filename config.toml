@@ -15,8 +15,8 @@ DefaultContentLanguageInSubdir = true
     languageCode = 'zh-CN'
     languageName = "简体中文"
     [languages.zh.params]
-      introTitle = "嗨! 我是樛木。"
-      introSubtitle = "爱看美剧，爱编程，爱生活。"
+      introTitle = "嗨! 我是樛木"
+      introSubtitle = "爱看书、美剧、电影，热爱生活，关注互联网流行技术。"
       introPhoto = "/picture.jpg"
       logo = "/blist-logo.png"
     [[languages.zh.menu.main]]

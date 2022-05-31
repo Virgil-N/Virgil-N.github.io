@@ -10,4 +10,4 @@ keywords: ["about-us", "about-hugo", "contact"]
 type: about
 ---
 
-爱看书、美剧、电影，关注互联网流行技术。
+爱看书、美剧、电影，热爱生活，关注互联网流行技术。

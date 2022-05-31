@@ -58,7 +58,7 @@ let s = &amp;#34;德国&amp;#34;; let mut s2 = s.to_string(); s2.push_str(&amp;#
       <pubDate>Fri, 27 May 2022 14:55:57 +0800</pubDate>
       
       <guid>https://virgil-n.github.io/zh/page/about/</guid>
-      <description>爱看书、美剧、电影，关注互联网流行技术。</description>
+      <description>爱看书、美剧、电影，热爱生活，关注互联网流行技术。</description>
     </item>
     
   </channel>
