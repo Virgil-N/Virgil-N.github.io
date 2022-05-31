@@ -1,7 +1,7 @@
 ---
 author: "樛木"
 title: "Rust习之字符串"
-date: 2022-05-29T12:47:34+08:00
+date: 2022-05-31T03:20:02Z
 draft: true
 description: "rust字符串学习中遇到的注意点"
 tags: ["学习", "rust"]
