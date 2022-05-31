@@ -53,14 +53,12 @@ let s = &amp;#34;德国&amp;#34;; let mut s2 = s.to_string(); s2.push_str(&amp;#
     </item>
     
     <item>
-      <title>About Me</title>
+      <title>关于我</title>
       <link>https://virgil-n.github.io/zh/page/about/</link>
-      <pubDate>Sun, 29 May 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 27 May 2022 14:55:57 +0800</pubDate>
       
       <guid>https://virgil-n.github.io/zh/page/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
- https://github.</description>
+      <description>爱看书、美剧、电影，关注互联网流行技术。</description>
     </item>
     
   </channel>

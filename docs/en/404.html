@@ -56,39 +56,23 @@
 
     
     
-    <li class="relative cursor-pointer">
-      <span class="flex items-center gap-2 language-switcher">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-          stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <circle cx="12" cy="12" r="9" />
-          <line x1="3.6" y1="9" x2="20.4" y2="9" />
-          <line x1="3.6" y1="15" x2="20.4" y2="15" />
-          <path d="M11.5 3a17 17 0 0 0 0 18" />
-          <path d="M12.5 3a17 17 0 0 1 0 18" />
-        </svg>
-        <a>Language</a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
-          stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
-        </svg>
-      </span>
-      <div
-        class="absolute left-0 z-10 flex-col hidden gap-2 mt-2 bg-gray-100 language-dropdown top-full dark:bg-gray-900 dark:text-white">
-        
-        
-        <a class="px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-700" href="/zh" lang="zh">简体中文</a>
-        
-        
-        
-        
-        
-        <a class="px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-700" href="/de" lang="de">Deutsch</a>
-        
-        
-      </div>
+    <li class="flex items-center">
+      
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <circle cx="12" cy="12" r="9" />
+        <line x1="3.6" y1="9" x2="20.4" y2="9" />
+        <line x1="3.6" y1="15" x2="20.4" y2="15" />
+        <path d="M11.5 3a17 17 0 0 0 0 18" />
+        <path d="M12.5 3a17 17 0 0 1 0 18" />
+      </svg>
+      <a href="/zh" lang="zh">简体中文</a>
+      
+      
+      
+      
     </li>
     
     
@@ -206,21 +190,6 @@
 
 
 
-
-<script>
-  const languageMenuButton = document.querySelector('.language-switcher');
-  const languageDropdown = document.querySelector('.language-dropdown');
-  languageMenuButton.addEventListener('click', (evt) => {
-    evt.preventDefault()
-    if (languageDropdown.classList.contains('hidden')) {
-      languageDropdown.classList.remove('hidden')
-      languageDropdown.classList.add('flex')
-    } else {
-      languageDropdown.classList.add('hidden');
-      languageDropdown.classList.remove('flex');
-    }
-  })
-</script>
 
 
 
