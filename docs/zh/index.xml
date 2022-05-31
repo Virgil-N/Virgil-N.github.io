@@ -8,11 +8,11 @@
     <language>zh-CN</language>
     <lastBuildDate>Tue, 31 May 2022 14:55:57 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Rust习之字符串</title>
-      <link>https://virgil-n.github.io/zh/blog/rust%E4%B9%A0%E4%B9%8B%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
+      <title>Rust学习之字符串</title>
+      <link>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
       <pubDate>Tue, 31 May 2022 14:55:57 +0800</pubDate>
       
-      <guid>https://virgil-n.github.io/zh/blog/rust%E4%B9%A0%E4%B9%8B%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
+      <guid>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
       <description>今天学习rust字符串的push_str方法时发现了一个隐藏的隐患:
  先声明一个&amp;amp;str类型不可变变量 调用此变量的to_string方法并后续直接调用push_str方法 打印此变量  发现变量的值未发生变化，这不是我们想要的
 let s = &amp;#34;美国&amp;#34;; s.to_string().push_str(&amp;#34;众神&amp;#34;); println!(&amp;#34;{}&amp;#34;, s); // 美国 这是一个隐藏的问题，对此我目前想到的方法时中间声明一个可变变量，然后再调用push_str方法

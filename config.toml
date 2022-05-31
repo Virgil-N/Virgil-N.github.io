@@ -23,20 +23,20 @@ DefaultContentLanguageInSubdir = true
         name = "博客"
         url = "blog"
         weight = 1
-
+    
     [[languages.zh.menu.main]]
-        name = "关于"
-        url = "page/about/"
+        name = "分类"
+        url = "categories"
         weight = 2
 
     [[languages.zh.menu.main]]
         name = "标签"
         url = "tags"
         weight = 3
-
+    
     [[languages.zh.menu.main]]
-        name = "榜单"
-        url = "/zh/blog/emoji-support/"
+        name = "关于"
+        url = "page/about/"
         weight = 4
   
   [languages.en]
@@ -54,19 +54,24 @@ DefaultContentLanguageInSubdir = true
         weight = 1
 
     [[languages.en.menu.main]]
-        name = "About"
-        url = "page/about/"
+        name = "Categories"
+        url = "categories"
         weight = 2
 
     [[languages.en.menu.main]]
         name = "Tags"
         url = "tags"
         weight = 3
+    
+    [[languages.en.menu.main]]
+        name = "About"
+        url = "page/about/"
+        weight = 4
 
     [[languages.en.menu.main]]
         name = "Top Post"
         url = "/en/blog/emoji-support/"
-        weight = 4
+        weight = 5
 
   # [languages.de]
   #   contentDir = "content/de" # Deutsch
