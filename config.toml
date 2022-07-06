@@ -4,7 +4,7 @@ title = '在地球'
 theme = 'blist'
 
 publishDir = 'docs'
-buildDrafts = true
+buildDrafts = false
 DefaultContentLanguage = "zh"
 DefaultContentLanguageInSubdir = true
 

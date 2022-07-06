@@ -4,7 +4,6 @@
       "a",
       "article",
       "body",
-      "br",
       "button",
       "circle",
       "defs",
@@ -14,7 +13,6 @@
       "h5",
       "head",
       "header",
-      "hr",
       "html",
       "img",
       "input",
@@ -33,7 +31,6 @@
       "section",
       "span",
       "stop",
-      "strong",
       "svg",
       "title",
       "ul"

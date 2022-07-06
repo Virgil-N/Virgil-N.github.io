@@ -5,7 +5,7 @@ description: ""
 categories: [""]
 tags: [""]
 thumbnail: "/about-me.jpg"
-draft: true
+draft: false
 keywords: ["about-us", "about-hugo", "contact"]
 type: about
 ---
