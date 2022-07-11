@@ -10,7 +10,7 @@ draft: false
 
 `rust`异步机制学习。
 
-- tokio的线程必须在`runtime`中运行
+- tokio的线程必须在`runtime`中运行。
 
 公用代码
 
