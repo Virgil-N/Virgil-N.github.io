@@ -1,5 +1,5 @@
 ---
-title: "Rust学习之thread_1"
+title: "Rust异步学习1"
 date: 2022-07-11T11:25:36+08:00
 description: ""
 categories: ["Rust"]
