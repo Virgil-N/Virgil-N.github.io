@@ -9,7 +9,7 @@
     Rust异步学习1 - 在地球
   </title>
   <meta name="description" content="rust异步机制学习。
- tokio的线程必须在runtime中运行  公用代码
+ tokio的线程必须在runtime中运行。  公用代码
 use chrono::Local;  pub fn now() -&gt; String {  Local::now().format(&#34;%F %T&#34;).to_string() } 案例代码
 fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std::thread::spawn(|| {  std::thread::sleep(std::time::Duration::from_secs(1));  println!(&#34;thread out block_on: {}&#34;, now());  });   // 报错，只能在tokio的runtime中运行  // tokio::spawn(async {  // std::thread::sleep(std::time::Duration::from_secs(1));  // println!(&#34;thread out block_on: {}&#34;, now());  // });   std::thread::sleep(std::time::Duration::from_secs(3));  println!(&#34;system ended: {}&#34;, Local::now().format(&#34;%F %T ." /><meta name="generator" content="Hugo 0.99.1" /><link
     rel="stylesheet"
@@ -21,7 +21,7 @@ fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std
 
   <meta property="og:title" content="Rust异步学习1" />
 <meta property="og:description" content="rust异步机制学习。
- tokio的线程必须在runtime中运行  公用代码
+ tokio的线程必须在runtime中运行。  公用代码
 use chrono::Local;  pub fn now() -&gt; String {  Local::now().format(&#34;%F %T&#34;).to_string() } 案例代码
 fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std::thread::spawn(|| {  std::thread::sleep(std::time::Duration::from_secs(1));  println!(&#34;thread out block_on: {}&#34;, now());  });   // 报错，只能在tokio的runtime中运行  // tokio::spawn(async {  // std::thread::sleep(std::time::Duration::from_secs(1));  // println!(&#34;thread out block_on: {}&#34;, now());  // });   std::thread::sleep(std::time::Duration::from_secs(3));  println!(&#34;system ended: {}&#34;, Local::now().format(&#34;%F %T ." />
 <meta property="og:type" content="article" />
@@ -33,13 +33,13 @@ fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Rust异步学习1"/>
 <meta name="twitter:description" content="rust异步机制学习。
- tokio的线程必须在runtime中运行  公用代码
+ tokio的线程必须在runtime中运行。  公用代码
 use chrono::Local;  pub fn now() -&gt; String {  Local::now().format(&#34;%F %T&#34;).to_string() } 案例代码
 fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std::thread::spawn(|| {  std::thread::sleep(std::time::Duration::from_secs(1));  println!(&#34;thread out block_on: {}&#34;, now());  });   // 报错，只能在tokio的runtime中运行  // tokio::spawn(async {  // std::thread::sleep(std::time::Duration::from_secs(1));  // println!(&#34;thread out block_on: {}&#34;, now());  // });   std::thread::sleep(std::time::Duration::from_secs(3));  println!(&#34;system ended: {}&#34;, Local::now().format(&#34;%F %T ."/>
 
   <meta itemprop="name" content="Rust异步学习1">
 <meta itemprop="description" content="rust异步机制学习。
- tokio的线程必须在runtime中运行  公用代码
+ tokio的线程必须在runtime中运行。  公用代码
 use chrono::Local;  pub fn now() -&gt; String {  Local::now().format(&#34;%F %T&#34;).to_string() } 案例代码
 fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std::thread::spawn(|| {  std::thread::sleep(std::time::Duration::from_secs(1));  println!(&#34;thread out block_on: {}&#34;, now());  });   // 报错，只能在tokio的runtime中运行  // tokio::spawn(async {  // std::thread::sleep(std::time::Duration::from_secs(1));  // println!(&#34;thread out block_on: {}&#34;, now());  // });   std::thread::sleep(std::time::Duration::from_secs(3));  println!(&#34;system ended: {}&#34;, Local::now().format(&#34;%F %T ."><meta itemprop="datePublished" content="2022-07-11T11:25:36+08:00" />
 <meta itemprop="dateModified" content="2022-07-11T11:25:36+08:00" />
@@ -173,7 +173,7 @@ fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std
 
     <p><code>rust</code>异步机制学习。</p>
 <ul>
-<li>tokio的线程必须在<code>runtime</code>中运行</li>
+<li>tokio的线程必须在<code>runtime</code>中运行。</li>
 </ul>
 <p>公用代码</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#ff79c6">use</span> chrono::Local;

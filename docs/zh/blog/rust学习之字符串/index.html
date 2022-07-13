@@ -31,7 +31,7 @@
   <meta itemprop="name" content="Rust学习之字符串">
 <meta itemprop="description" content="rust字符串学习中遇到的注意点"><meta itemprop="datePublished" content="2022-05-31T14:55:57+08:00" />
 <meta itemprop="dateModified" content="2022-05-31T14:55:57+08:00" />
-<meta itemprop="wordCount" content="30">
+<meta itemprop="wordCount" content="32">
 <meta itemprop="keywords" content="," />
 </head>
 <body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container relative flex flex-wrap justify-between gap-4 p-6 mx-auto md:justify-between">
@@ -165,16 +165,18 @@
 <li>调用此变量的to_string方法并后续直接调用push_str方法</li>
 <li>打印此变量</li>
 </ol>
-<p>发现变量的值未发生变化，这不是我们想要的</p>
+<p>发现变量的值未发生变化，这不是我们想要的，
+其实不是这样的，因为<code>to_string</code>方法返回了一个新的<code>String</code>类型，他才是<code>push_str</code>方法的调用者，而<code>s</code>没有发生任何变化，所以最后我们打印的还是“美国”，而且从声明变量时没有加<code>mut</code>而编译器未报错就可以看出，<code>s</code>的值并没有改变。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> s <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;美国&#34;</span>;
 </span></span><span style="display:flex;"><span>s.to_string().push_str(<span style="color:#f1fa8c">&#34;众神&#34;</span>);
 </span></span><span style="display:flex;"><span>println!(<span style="color:#f1fa8c">&#34;{}&#34;</span>, s); <span style="color:#6272a4">// 美国
-</span></span></span></code></pre></div><p>这是一个隐藏的问题，对此我目前想到的方法时中间声明一个可变变量，然后再调用push_str方法</p>
+</span></span></span></code></pre></div><p>中间声明一个可变变量，然后再调用push_str方法</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> s <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;德国&#34;</span>;
 </span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> <span style="color:#ff79c6">mut</span> s2 <span style="color:#ff79c6">=</span> s.to_string();
 </span></span><span style="display:flex;"><span>s2.push_str(<span style="color:#f1fa8c">&#34;希特勒&#34;</span>);
 </span></span><span style="display:flex;"><span>println!(<span style="color:#f1fa8c">&#34;s2: {}&#34;</span>, s2); <span style="color:#6272a4">// 德国希特勒
-</span></span></span></code></pre></div>
+</span></span></span></code></pre></div><p>啊，过了几天再看自己之前写的这篇文章，感觉好low啊！😂</p>
+
   </article><div class="bg-blue-100 dark:bg-gray-900">
   <div class="container px-6 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <div>
