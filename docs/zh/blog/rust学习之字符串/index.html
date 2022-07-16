@@ -31,7 +31,7 @@
   <meta itemprop="name" content="Rust学习之字符串">
 <meta itemprop="description" content="rust字符串学习中遇到的注意点"><meta itemprop="datePublished" content="2022-05-31T14:55:57+08:00" />
 <meta itemprop="dateModified" content="2022-05-31T14:55:57+08:00" />
-<meta itemprop="wordCount" content="39">
+<meta itemprop="wordCount" content="47">
 <meta itemprop="keywords" content="," />
 </head>
 <body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container relative flex flex-wrap justify-between gap-4 p-6 mx-auto md:justify-between">
@@ -159,10 +159,10 @@
       
     </h5>
 
-    <p>今天学习rust字符串的push_str方法时发现了一个隐藏的隐患:</p>
+    <p>今天学习rust字符串的<code>push_str</code>方法时发现了一个隐藏的隐患:</p>
 <ol>
-<li>先声明一个&amp;str类型不可变变量</li>
-<li>调用此变量的to_string方法并后续直接调用push_str方法</li>
+<li>先声明一个<code>&amp;str</code>类型不可变变量</li>
+<li>调用此变量的<code>to_string</code>方法并后续直接调用<code>push_str</code>方法</li>
 <li>打印此变量</li>
 </ol>
 <p>发现变量的值未发生变化，这不是我们想要的，
@@ -170,7 +170,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> s <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;美国&#34;</span>;
 </span></span><span style="display:flex;"><span>s.to_string().push_str(<span style="color:#f1fa8c">&#34;众神&#34;</span>);
 </span></span><span style="display:flex;"><span>println!(<span style="color:#f1fa8c">&#34;{}&#34;</span>, s); <span style="color:#6272a4">// 美国
-</span></span></span></code></pre></div><p>中间声明一个可变变量，然后再调用push_str方法</p>
+</span></span></span></code></pre></div><p>中间声明一个可变变量，然后再调用<code>push_str</code>方法</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> s <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;德国&#34;</span>;
 </span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> <span style="color:#ff79c6">mut</span> s2 <span style="color:#ff79c6">=</span> s.to_string();
 </span></span><span style="display:flex;"><span>s2.push_str(<span style="color:#f1fa8c">&#34;希特勒&#34;</span>);
@@ -195,6 +195,9 @@
 </tr>
 </tbody>
 </table>
+<p>切片<code>&amp;str</code>虽然可以安全使用，但是，我们很难动态修改其内容 —— 其地址、长度都是固定的。于是 rust 提供了数据类型<code>String</code>。</p>
+<p><code>String</code>包含了数据指针、数组容量、数据长度等三个字段。如果新修改的数据长度在其容量范围内，数据可以原地修改。如果新修改的数据长度超出了容量范围，它可以重新申请更大的内存。</p>
+<p>于是我们看到，<code>String</code>和<code>&amp;str</code>是两个完全不一样的结构体。为什么字符串要保留这两种形式？原因就是效率。rust希望在数组容量不会变化的时候，用<code>&amp;str</code>。在数组长度可能发生变化的情况下，使用 <code>String</code>。</p>
 
   </article><div class="bg-blue-100 dark:bg-gray-900">
   <div class="container px-6 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
