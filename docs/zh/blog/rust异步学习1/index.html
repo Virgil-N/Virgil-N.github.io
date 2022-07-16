@@ -11,7 +11,7 @@
   <meta name="description" content="rust异步机制学习。
  tokio的线程必须在runtime中运行。  公用代码
 use chrono::Local;  pub fn now() -&gt; String {  Local::now().format(&#34;%F %T&#34;).to_string() } 案例代码
-fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std::thread::spawn(|| {  std::thread::sleep(std::time::Duration::from_secs(1));  println!(&#34;thread out block_on: {}&#34;, now());  });   // 报错，只能在tokio的runtime中运行  // tokio::spawn(async {  // std::thread::sleep(std::time::Duration::from_secs(1));  // println!(&#34;thread out block_on: {}&#34;, now());  // });   std::thread::sleep(std::time::Duration::from_secs(3));  println!(&#34;system ended: {}&#34;, Local::now().format(&#34;%F %T ." /><meta name="generator" content="Hugo 0.99.1" /><link
+fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std::thread::spawn(|| {  std::thread::sleep(std::time::Duration::from_secs(1));  println!(&#34;thread out block_on: {}&#34;, now());  });   // 报错，只能在tokio的runtime中运行  // tokio::spawn(async {  // std::thread::sleep(std::time::Duration::from_secs(1));  // println!(&#34;thread out block_on: {}&#34;, now());  // });   std::thread::sleep(std::time::Duration::from_secs(3));  println!(&#34;system ended: {}&#34;, Local::now().format(&#34;%F %T ." /><meta name="generator" content="Hugo 0.96.0" /><link
     rel="stylesheet"
     href="https://virgil-n.github.io/css/styles.min.198e036e07f9315c64ac8148645b37db60243e6e5206ead92c979b3286f18468.css"
     integrity="sha256-GY4Dbgf5MVxkrIFIZFs322AkPm5SBurZLJebMobxhGg="
