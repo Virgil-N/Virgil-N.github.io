@@ -126,7 +126,7 @@ DefaultContentLanguageInSubdir = true
 [params.homepage.social]
   # Global params xommon for both languages
   title = "Follow me"
-  description = "Living in the name of free man on earth"
+  description = "Living on earth in the name of Free Man"
   twitter = "https://twitter.com/"
   linkedin = "https://linkedin.com/in/"
   xing = "https://www.xing.com/profile/"
