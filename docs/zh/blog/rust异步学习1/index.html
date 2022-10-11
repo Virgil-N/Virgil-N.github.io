@@ -9,9 +9,13 @@
     Rust异步学习1 - 在地球
   </title>
   <meta name="description" content="rust异步机制学习。
- tokio的线程必须在runtime中运行。  公用代码
-use chrono::Local;  pub fn now() -&gt; String {  Local::now().format(&#34;%F %T&#34;).to_string() } 案例代码
-fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std::thread::spawn(|| {  std::thread::sleep(std::time::Duration::from_secs(1));  println!(&#34;thread out block_on: {}&#34;, now());  });   // 报错，只能在tokio的runtime中运行  // tokio::spawn(async {  // std::thread::sleep(std::time::Duration::from_secs(1));  // println!(&#34;thread out block_on: {}&#34;, now());  // });   std::thread::sleep(std::time::Duration::from_secs(3));  println!(&#34;system ended: {}&#34;, Local::now().format(&#34;%F %T ." /><meta name="generator" content="Hugo 0.96.0" /><link
+tokio的线程必须在runtime中运行。 公用代码
+use chrono::Local; pub fn now() -&gt; String { Local::now().format(&#34;%F %T&#34;).to_string() } 案例代码
+fn main() { println!(&#34;system here&#34;); // rust的线程正常运行 std::thread::spawn(|| { std::thread::sleep(std::time::Duration::from_secs(1)); println!(&#34;thread out block_on: {}&#34;, now()); }); // 报错，只能在tokio的runtime中运行 // tokio::spawn(async { // std::thread::sleep(std::time::Duration::from_secs(1)); // println!(&#34;thread out block_on: {}&#34;, now()); // }); std::thread::sleep(std::time::Duration::from_secs(3)); println!(&#34;system ended: {}&#34;, Local::now().format(&#34;%F %T .%3f&#34;)); } 运行结果(注意打印时间间隔为2秒):
+system here
+thread out block_on: 2022-07-11 12:40:54
+system ended: 2022-07-11 12:40:56 .478
+block_on是阻塞的，而enter是非阻塞的(注意查看以下四段代码的运行结果)。 fn main() { let rt1 = tokio::runtime::Runtime::new()." /><meta name="generator" content="Hugo 0.101.0" /><link
     rel="stylesheet"
     href="https://virgil-n.github.io/css/styles.min.198e036e07f9315c64ac8148645b37db60243e6e5206ead92c979b3286f18468.css"
     integrity="sha256-GY4Dbgf5MVxkrIFIZFs322AkPm5SBurZLJebMobxhGg="
@@ -21,9 +25,13 @@ fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std
 
   <meta property="og:title" content="Rust异步学习1" />
 <meta property="og:description" content="rust异步机制学习。
- tokio的线程必须在runtime中运行。  公用代码
-use chrono::Local;  pub fn now() -&gt; String {  Local::now().format(&#34;%F %T&#34;).to_string() } 案例代码
-fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std::thread::spawn(|| {  std::thread::sleep(std::time::Duration::from_secs(1));  println!(&#34;thread out block_on: {}&#34;, now());  });   // 报错，只能在tokio的runtime中运行  // tokio::spawn(async {  // std::thread::sleep(std::time::Duration::from_secs(1));  // println!(&#34;thread out block_on: {}&#34;, now());  // });   std::thread::sleep(std::time::Duration::from_secs(3));  println!(&#34;system ended: {}&#34;, Local::now().format(&#34;%F %T ." />
+tokio的线程必须在runtime中运行。 公用代码
+use chrono::Local; pub fn now() -&gt; String { Local::now().format(&#34;%F %T&#34;).to_string() } 案例代码
+fn main() { println!(&#34;system here&#34;); // rust的线程正常运行 std::thread::spawn(|| { std::thread::sleep(std::time::Duration::from_secs(1)); println!(&#34;thread out block_on: {}&#34;, now()); }); // 报错，只能在tokio的runtime中运行 // tokio::spawn(async { // std::thread::sleep(std::time::Duration::from_secs(1)); // println!(&#34;thread out block_on: {}&#34;, now()); // }); std::thread::sleep(std::time::Duration::from_secs(3)); println!(&#34;system ended: {}&#34;, Local::now().format(&#34;%F %T .%3f&#34;)); } 运行结果(注意打印时间间隔为2秒):
+system here
+thread out block_on: 2022-07-11 12:40:54
+system ended: 2022-07-11 12:40:56 .478
+block_on是阻塞的，而enter是非阻塞的(注意查看以下四段代码的运行结果)。 fn main() { let rt1 = tokio::runtime::Runtime::new()." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://virgil-n.github.io/zh/blog/rust%E5%BC%82%E6%AD%A5%E5%AD%A6%E4%B9%A01/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2022-07-11T11:25:36+08:00" />
@@ -33,18 +41,26 @@ fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Rust异步学习1"/>
 <meta name="twitter:description" content="rust异步机制学习。
- tokio的线程必须在runtime中运行。  公用代码
-use chrono::Local;  pub fn now() -&gt; String {  Local::now().format(&#34;%F %T&#34;).to_string() } 案例代码
-fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std::thread::spawn(|| {  std::thread::sleep(std::time::Duration::from_secs(1));  println!(&#34;thread out block_on: {}&#34;, now());  });   // 报错，只能在tokio的runtime中运行  // tokio::spawn(async {  // std::thread::sleep(std::time::Duration::from_secs(1));  // println!(&#34;thread out block_on: {}&#34;, now());  // });   std::thread::sleep(std::time::Duration::from_secs(3));  println!(&#34;system ended: {}&#34;, Local::now().format(&#34;%F %T ."/>
+tokio的线程必须在runtime中运行。 公用代码
+use chrono::Local; pub fn now() -&gt; String { Local::now().format(&#34;%F %T&#34;).to_string() } 案例代码
+fn main() { println!(&#34;system here&#34;); // rust的线程正常运行 std::thread::spawn(|| { std::thread::sleep(std::time::Duration::from_secs(1)); println!(&#34;thread out block_on: {}&#34;, now()); }); // 报错，只能在tokio的runtime中运行 // tokio::spawn(async { // std::thread::sleep(std::time::Duration::from_secs(1)); // println!(&#34;thread out block_on: {}&#34;, now()); // }); std::thread::sleep(std::time::Duration::from_secs(3)); println!(&#34;system ended: {}&#34;, Local::now().format(&#34;%F %T .%3f&#34;)); } 运行结果(注意打印时间间隔为2秒):
+system here
+thread out block_on: 2022-07-11 12:40:54
+system ended: 2022-07-11 12:40:56 .478
+block_on是阻塞的，而enter是非阻塞的(注意查看以下四段代码的运行结果)。 fn main() { let rt1 = tokio::runtime::Runtime::new()."/>
 
   <meta itemprop="name" content="Rust异步学习1">
 <meta itemprop="description" content="rust异步机制学习。
- tokio的线程必须在runtime中运行。  公用代码
-use chrono::Local;  pub fn now() -&gt; String {  Local::now().format(&#34;%F %T&#34;).to_string() } 案例代码
-fn main() {  println!(&#34;system here&#34;);  // rust的线程正常运行  std::thread::spawn(|| {  std::thread::sleep(std::time::Duration::from_secs(1));  println!(&#34;thread out block_on: {}&#34;, now());  });   // 报错，只能在tokio的runtime中运行  // tokio::spawn(async {  // std::thread::sleep(std::time::Duration::from_secs(1));  // println!(&#34;thread out block_on: {}&#34;, now());  // });   std::thread::sleep(std::time::Duration::from_secs(3));  println!(&#34;system ended: {}&#34;, Local::now().format(&#34;%F %T ."><meta itemprop="datePublished" content="2022-07-11T11:25:36+08:00" />
+tokio的线程必须在runtime中运行。 公用代码
+use chrono::Local; pub fn now() -&gt; String { Local::now().format(&#34;%F %T&#34;).to_string() } 案例代码
+fn main() { println!(&#34;system here&#34;); // rust的线程正常运行 std::thread::spawn(|| { std::thread::sleep(std::time::Duration::from_secs(1)); println!(&#34;thread out block_on: {}&#34;, now()); }); // 报错，只能在tokio的runtime中运行 // tokio::spawn(async { // std::thread::sleep(std::time::Duration::from_secs(1)); // println!(&#34;thread out block_on: {}&#34;, now()); // }); std::thread::sleep(std::time::Duration::from_secs(3)); println!(&#34;system ended: {}&#34;, Local::now().format(&#34;%F %T .%3f&#34;)); } 运行结果(注意打印时间间隔为2秒):
+system here
+thread out block_on: 2022-07-11 12:40:54
+system ended: 2022-07-11 12:40:56 .478
+block_on是阻塞的，而enter是非阻塞的(注意查看以下四段代码的运行结果)。 fn main() { let rt1 = tokio::runtime::Runtime::new()."><meta itemprop="datePublished" content="2022-07-11T11:25:36+08:00" />
 <meta itemprop="dateModified" content="2022-07-11T11:25:36+08:00" />
 <meta itemprop="wordCount" content="331">
-<meta itemprop="keywords" content="," />
+<meta itemprop="keywords" content="异步," />
 </head>
 <body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container relative flex flex-wrap justify-between gap-4 p-6 mx-auto md:justify-between">
   <a href="https://virgil-n.github.io/zh/" class="text-2xl font-extrabold capitalize">

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>注释 on 在地球</title>
+    <link>https://virgil-n.github.io/zh/tags/%E6%B3%A8%E9%87%8A/</link>
+    <description>Recent content in 注释 on 在地球</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 11 Oct 2022 21:34:09 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/tags/%E6%B3%A8%E9%87%8A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust学习之注释</title>
+      <link>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E6%B3%A8%E9%87%8A/</link>
+      <pubDate>Tue, 11 Oct 2022 21:34:09 +0800</pubDate>
+      
+      <guid>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E6%B3%A8%E9%87%8A/</guid>
+      <description>rust注释学习。
+普通注释
+// 单行注释 /* */ 多行注释 文档注释
+/// 单行外部文档注释 /** */ 多行外部文档注释 //! 单行内部文档注释 /*! */ 多行内部文档注释 外部文档注释一般写在代码块前面，内部文档注意一般写在代码块内部。
+注意: crate注释必须使用内部文档注释
+普通注释 外部文档注释 内部文档注释 // /// //! /**/ /** */ /*! */ </description>
+    </item>
+    
+  </channel>
+</rss>

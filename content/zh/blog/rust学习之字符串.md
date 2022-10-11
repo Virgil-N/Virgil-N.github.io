@@ -3,7 +3,7 @@ title: "Rust学习之字符串"
 date: 2022-05-31T14:55:57+08:00
 description: "rust字符串学习中遇到的注意点"
 categories: ["Rust"]
-tags: [""]
+tags: ["字符串"]
 thumbnail: /blog-post.jpg
 draft: false
 ---
