@@ -6,7 +6,21 @@
     <description>Recent content in Blog on 在地球</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 11 Oct 2022 21:34:09 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Nov 2022 15:28:59 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust学习之迭代器</title>
+      <link>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%BF%AD%E4%BB%A3%E5%99%A8/</link>
+      <pubDate>Sat, 26 Nov 2022 15:28:59 +0800</pubDate>
+      
+      <guid>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%BF%AD%E4%BB%A3%E5%99%A8/</guid>
+      <description>Rust迭代器的使用在日常开发中是很基础和重要的，现在了解下迭代器的使用。
+我们获取迭代器有以下几种方法：
+.iter()返回一个迭代器，包含类型的引用 .iter_mut()返回一个迭代器，包含类型的可变引用 .into_iter()返回一个包含类型值的迭代器 迭代器的实现：只需要实现Trait std::iter::Iterator这个trait就行了，不多说了。
+迭代器一般会配合一些集合操作方法，比如rev()，map()，fold()等，学会组合使用会展现出强大的威力。并且相比较for_each()，迭代器是惰性的，对性能有一定优化。
+注意.into_iter()在receiver为引用的情况下会依情况调用.iter()或.inter_mut()方法。观察以下代码：
+// block 1 // 我们都清楚.into_iter()方法是会转移所有权的，因此下面打印报错在意料之中 let v1 = vec![1, 2, 3]; let i1 = v1.into_iter(); println!(&amp;#34;{:?}, {:?}&amp;#34;, v1, i1); // borrow of moved value: `v1` // block 2 // 有没有一点吃惊😱 let v1 = vec![1, 2, 3]; let i1 = (&amp;amp;v1).into_iter(); println!(&amp;#34;{:?}, {:?}&amp;#34;, v1, i1); // [1, 2, 3] // 或者 let v1 = &amp;amp;vec![1, 2, 3]; let i1 = v1.into_iter(); println!(&amp;#34;{:?}, {:?</description>
+    </item>
+    
     <item>
       <title>Rust学习之注释</title>
       <link>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E6%B3%A8%E9%87%8A/</link>
