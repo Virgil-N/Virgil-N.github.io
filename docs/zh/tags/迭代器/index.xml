@@ -16,9 +16,9 @@
       <description>Rust迭代器的使用在日常开发中是很基础和重要的，现在了解下迭代器的使用。
 我们获取迭代器有以下几种方法：
 .iter()返回一个迭代器，包含类型的引用 .iter_mut()返回一个迭代器，包含类型的可变引用 .into_iter()返回一个包含类型值的迭代器 迭代器的实现：只需要实现Trait std::iter::Iterator这个trait就行了，不多说了。
-迭代器一般会配合一些集合操作方法，比如rev()，map()，fold()等，学会组合使用会展现出强大的威力。并且相比较for_each()，迭代器是惰性的，对性能有一定优化。
+迭代器一般会配合一些集合操作方法，比如rev()，map()，fold()等，学会组合使用会展现出强大的威力。并且相比较for in，loop等循环，迭代器是惰性的，对性能有一定优化。
 注意.into_iter()在receiver为引用的情况下会依情况调用.iter()或.inter_mut()方法。观察以下代码：
-// block 1 // 我们都清楚.into_iter()方法是会转移所有权的，因此下面打印报错在意料之中 let v1 = vec![1, 2, 3]; let i1 = v1.into_iter(); println!(&amp;#34;{:?}, {:?}&amp;#34;, v1, i1); // borrow of moved value: `v1` // block 2 // 有没有一点吃惊😱 let v1 = vec![1, 2, 3]; let i1 = (&amp;amp;v1).into_iter(); println!(&amp;#34;{:?}, {:?}&amp;#34;, v1, i1); // [1, 2, 3] // 或者 let v1 = &amp;amp;vec![1, 2, 3]; let i1 = v1.into_iter(); println!(&amp;#34;{:?}, {:?</description>
+// block 1 // 我们都清楚.into_iter()方法是会转移所有权的，因此下面打印报错在意料之中 let v1 = vec![1, 2, 3]; let i1 = v1.into_iter(); println!(&amp;#34;{:?}, {:?}&amp;#34;, v1, i1); // borrow of moved value: `v1` // block 2 // 有没有一点吃惊😱 let v1 = vec![1, 2, 3]; let i1 = (&amp;amp;v1).into_iter(); println!(&amp;#34;{:?}, {:?}&amp;#34;, v1, i1); // [1, 2, 3] // 或者 let v1 = &amp;amp;vec![1, 2, 3]; let i1 = v1.into_iter(); println!</description>
     </item>
     
   </channel>

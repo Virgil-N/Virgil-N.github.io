@@ -31,7 +31,7 @@
   <meta itemprop="name" content="Rust学习之迭代器">
 <meta itemprop="description" content="迭代器的简单了解"><meta itemprop="datePublished" content="2022-11-26T15:28:59+08:00" />
 <meta itemprop="dateModified" content="2022-11-26T15:28:59+08:00" />
-<meta itemprop="wordCount" content="305">
+<meta itemprop="wordCount" content="306">
 <meta itemprop="keywords" content="迭代器," />
 </head>
 <body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container relative flex flex-wrap justify-between gap-4 p-6 mx-auto md:justify-between">
@@ -167,7 +167,7 @@
 <li><code>.into_iter()</code>返回一个包含类型值的迭代器</li>
 </ul>
 <p>迭代器的实现：只需要实现<code>Trait std::iter::Iterator</code>这个trait就行了，不多说了。</p>
-<p>迭代器一般会配合一些集合操作方法，比如<code>rev()</code>，<code>map()</code>，<code>fold()</code>等，学会组合使用会展现出强大的威力。并且相比较<code>for_each()</code>，迭代器是惰性的，对性能有一定优化。</p>
+<p>迭代器一般会配合一些集合操作方法，比如<code>rev()</code>，<code>map()</code>，<code>fold()</code>等，学会组合使用会展现出强大的威力。并且相比较<code>for in</code>，<code>loop</code>等循环，迭代器是惰性的，对性能有一定优化。</p>
 <p>注意<code>.into_iter()</code>在receiver为引用的情况下会依情况调用<code>.iter()</code>或<code>.inter_mut()</code>方法。观察以下代码：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#6272a4">// block 1
 </span></span></span><span style="display:flex;"><span><span style="color:#6272a4">// 我们都清楚.into_iter()方法是会转移所有权的，因此下面打印报错在意料之中

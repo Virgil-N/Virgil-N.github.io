@@ -23,6 +23,9 @@ pub unsafe fn unwrap_unchecked(self) -> T
 /// 3
 pub fn and<U>(self, optb: Option<U>) -> Option<U>
 pub fn and_then<U, F>(self, f: F) -> Option<U> where F: FnOnce(T) -> Option<U>
+/// 4
+pub fn copied(self) -> Option<T> where T: Copy
+pub fn cloned(self) -> Option<T> where T: Clone
 ```
 
 - `Result<T, E>`
@@ -42,6 +45,9 @@ pub unsafe fn unwrap_err_unchecked(self) -> E
 /// 3
 pub fn and<U>(self, res: Result<U, E>) -> Result<U, E>
 pub fn and_then<U, F>(self, op: F) -> Result<U, E> where F: FnOnce(T) -> Result<U, E>
+/// 4
+pub fn copied(self) -> Result<T, E> where T: Copy
+pub fn cloned(self) -> Result<T, E> where T: Clone
 ```
 
 (持续更新)
