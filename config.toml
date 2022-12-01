@@ -45,7 +45,7 @@ DefaultContentLanguageInSubdir = true
     languageName = "English"
     [languages.en.params]
       introTitle = "Hey! I'm Virgil N."
-      introSubtitle = "26 y/o junior developer who enjoys social card games, blogging and painting"
+      introSubtitle = "junior developer who enjoys reading, movies and outdoor activities, focus in Internet technologies"
       introPhoto = "/picture.jpg"
       logo = "/blist-logo.png"
     [[languages.en.menu.main]]
@@ -109,7 +109,7 @@ DefaultContentLanguageInSubdir = true
   darkModeToggle = true
   
   # Enable search in header
-  enableSearch = true
+  enableSearch = false
 
   # Custom copyright - optional
   copyright = "Copyright © 2021 - Katheryn Fox · All rights reserved"
@@ -129,11 +129,8 @@ DefaultContentLanguageInSubdir = true
   description = "Living on earth in the name of Free Man"
   twitter = "https://twitter.com/"
   linkedin = "https://linkedin.com/in/"
-  xing = "https://www.xing.com/profile/"
   github = "https://github.com/"
-  medium = "https://medium.com/"
   reddit = "https://reddit.com/"
-  dribbble = "https://dribbble.com/"
 
 [[menu.main]]
   name = "About"
