@@ -6,7 +6,21 @@
     <description>Recent content on 在地球</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 26 Nov 2022 15:28:59 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Dec 2022 17:41:03 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust学习之cfg宏</title>
+      <link>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8Bcfg%E5%AE%8F/</link>
+      <pubDate>Fri, 02 Dec 2022 17:41:03 +0800</pubDate>
+      
+      <guid>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8Bcfg%E5%AE%8F/</guid>
+      <description>我们可以使用cfg!宏来告诉编译器当前的配置条件。常用的有：
+键值对类型：target_os、target_arch、target_env、target_family、target_vendor、target_endian、feature等。
+单项类型：test、debug_assertions
+此外，也可以在属性中使用cfg，比如：#[cfg(test)]、#[cfg(windows)]等。还可以使用#[cfg_attr(predicate, attr)]。
+eg:
+let cfg_test = if cfg!(target_os = &amp;#34;macos&amp;#34;) { String::from(&amp;#34;mac&amp;#34;) } else { String::from(&amp;#34;else&amp;#34;) }; println!(&amp;#34;{}&amp;#34;, cfg_test); // mac #[cfg(test)] mod test_mod { #[test] fn just_test() { if cfg!(test) { assert_eq!(1, 1); } else { println!(&amp;#34;...&amp;#34;); } } } </description>
+    </item>
+    
     <item>
       <title>Rust学习之迭代器</title>
       <link>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%BF%AD%E4%BB%A3%E5%99%A8/</link>
