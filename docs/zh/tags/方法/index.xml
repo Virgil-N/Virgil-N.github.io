@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>方法 on 在地球</title>
+    <link>https://virgil-n.github.io/zh/tags/%E6%96%B9%E6%B3%95/</link>
+    <description>Recent content in 方法 on 在地球</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 26 Nov 2022 22:55:08 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/tags/%E6%96%B9%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust学习之方法整理</title>
+      <link>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</link>
+      <pubDate>Sat, 26 Nov 2022 22:55:08 +0800</pubDate>
+      
+      <guid>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</guid>
+      <description>Option /// 1 pub fn ok_or&amp;lt;E&amp;gt;(self, err: E) -&amp;gt; Result&amp;lt;T, E&amp;gt; pub fn ok_or_else&amp;lt;E, F&amp;gt;(self, err: F) -&amp;gt; Result&amp;lt;T, E&amp;gt; where F: FnOnce() -&amp;gt; E /// 2 pub fn unwrap(self) -&amp;gt; T pub fn unwrap_or(self, default: T) -&amp;gt; T pub fn unwrap_or_else&amp;lt;F&amp;gt;(self, f: F) -&amp;gt; T where F: FnOnce() -&amp;gt; T pub fn unwrap_or_default(self) -&amp;gt; T where T: Default pub unsafe fn unwrap_unchecked(self) -&amp;gt; T /// 3 pub fn and&amp;lt;U&amp;gt;(self, optb: Option&amp;lt;U&amp;gt;) -&amp;gt; Option&amp;lt;U&amp;gt; pub fn and_then&amp;lt;U, F&amp;gt;(self, f: F) -&amp;gt; Option&amp;lt;U&amp;gt; where F: FnOnce(T) -&amp;gt; Option&amp;lt;U&amp;gt; /// 4 pub fn copied(self) -&amp;gt; Option&amp;lt;T&amp;gt; where T: Copy pub fn cloned(self) -&amp;gt; Option&amp;lt;T&amp;gt; where T: Clone Result&amp;lt;T, E&amp;gt; /// 1 pub fn ok(self) -&amp;gt; Option&amp;lt;T&amp;gt; pub fn err(self) -&amp;gt; Option&amp;lt;E&amp;gt; /// 2 pub fn unwrap(self) -&amp;gt; T where E: Debug pub fn unwrap_or(self, default: T) -&amp;gt; T pub fn unwrap_or_else&amp;lt;F&amp;gt;(self, op: F) -&amp;gt; T where F: FnOnce(E) -&amp;gt; T pub fn unwrap_or_default(self) -&amp;gt; T where T: Default pub unsafe fn unwrap_unchecked(self) -&amp;gt; T pub fn unwrap_err(self) -&amp;gt; E where T: Debug pub unsafe fn unwrap_err_unchecked(self) -&amp;gt; E /// 3 pub fn and&amp;lt;U&amp;gt;(self, res: Result&amp;lt;U, E&amp;gt;) -&amp;gt; Result&amp;lt;U, E&amp;gt; pub fn and_then&amp;lt;U, F&amp;gt;(self, op: F) -&amp;gt; Result&amp;lt;U, E&amp;gt; where F: FnOnce(T) -&amp;gt; Result&amp;lt;U, E&amp;gt; /// 4 pub fn copied(self) -&amp;gt; Result&amp;lt;T, E&amp;gt; where T: Copy pub fn cloned(self) -&amp;gt; Result&amp;lt;T, E&amp;gt; where T: Clone (持续更新)</description>
+    </item>
+    
+  </channel>
+</rss>

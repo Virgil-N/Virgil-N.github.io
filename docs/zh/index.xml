@@ -6,7 +6,16 @@
     <description>Recent content on 在地球</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 02 Dec 2022 17:41:03 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Dec 2022 22:27:04 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Egui浅尝</title>
+      <link>https://virgil-n.github.io/zh/blog/egui%E6%B5%85%E5%B0%9D/</link>
+      <pubDate>Sun, 11 Dec 2022 22:27:04 +0800</pubDate>
+      
+      <guid>https://virgil-n.github.io/zh/blog/egui%E6%B5%85%E5%B0%9D/</guid>
+      <description>最近因为某些原因在家🙄，闲时尝试了下egui这个库。感觉是蛮简单的。</description>
+    </item>
+    
     <item>
       <title>Rust学习之cfg宏</title>
       <link>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8Bcfg%E5%AE%8F/</link>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GUI on 在地球</title>
+    <link>https://virgil-n.github.io/zh/categories/gui/</link>
+    <description>Recent content in GUI on 在地球</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 11 Dec 2022 22:27:04 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/categories/gui/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Egui浅尝</title>
+      <link>https://virgil-n.github.io/zh/blog/egui%E6%B5%85%E5%B0%9D/</link>
+      <pubDate>Sun, 11 Dec 2022 22:27:04 +0800</pubDate>
+      
+      <guid>https://virgil-n.github.io/zh/blog/egui%E6%B5%85%E5%B0%9D/</guid>
+      <description>最近因为某些原因在家🙄，闲时尝试了下egui这个库。感觉是蛮简单的。</description>
+    </item>
+    
+  </channel>
+</rss>
