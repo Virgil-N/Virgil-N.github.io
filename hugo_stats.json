@@ -42,7 +42,8 @@
       "thead",
       "title",
       "tr",
-      "ul"
+      "ul",
+      "video"
     ],
     "classes": [
       "absolute",

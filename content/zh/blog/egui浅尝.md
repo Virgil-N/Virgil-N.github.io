@@ -10,5 +10,4 @@ draft: false
 
 最近因为某些原因在家🙄，闲时尝试了下egui这个库。感觉是蛮简单的。
 
-![视频](/我的影片.mp4)
-![图片](/QQ20221211-224238-HD.gif)
+<video src="/我的影片.mp4" controls></video>
