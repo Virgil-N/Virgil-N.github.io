@@ -5,17 +5,30 @@
     <loc>https://virgil-n.github.io/de/blog/23.11.2023/</loc>
     <lastmod>2023-11-22T14:25:34+08:00</lastmod>
   </url><url>
+    <loc>https://virgil-n.github.io/de/</loc>
+    <lastmod>2023-11-22T14:25:34+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://virgil-n.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://virgil-n.github.io/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://virgil-n.github.io/de/"
+                />
+  </url><url>
     <loc>https://virgil-n.github.io/de/blog/</loc>
     <lastmod>2023-11-22T14:25:34+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://virgil-n.github.io/en/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://virgil-n.github.io/zh/blog/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -32,8 +45,8 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
-                href="https://virgil-n.github.io/zh/categories/"
+                hreflang="fr"
+                href="https://virgil-n.github.io/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -43,24 +56,6 @@
   </url><url>
     <loc>https://virgil-n.github.io/de/tags/dialoge/</loc>
     <lastmod>2023-11-22T14:25:34+08:00</lastmod>
-  </url><url>
-    <loc>https://virgil-n.github.io/de/</loc>
-    <lastmod>2023-11-22T14:25:34+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://virgil-n.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://virgil-n.github.io/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://virgil-n.github.io/de/"
-                />
   </url><url>
     <loc>https://virgil-n.github.io/de/categories/leben/</loc>
     <lastmod>2023-11-22T14:25:34+08:00</lastmod>
@@ -77,8 +72,8 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
-                href="https://virgil-n.github.io/zh/tags/"
+                hreflang="fr"
+                href="https://virgil-n.github.io/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -88,16 +83,6 @@
   </url><url>
     <loc>https://virgil-n.github.io/de/blog/22.11.2023/</loc>
     <lastmod>2023-11-22T11:33:28+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://virgil-n.github.io/zh/blog/22.11.2023/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://virgil-n.github.io/de/blog/22.11.2023/"
-                />
   </url><url>
     <loc>https://virgil-n.github.io/de/tags/meinungen/</loc>
     <lastmod>2023-11-22T11:33:28+08:00</lastmod>
@@ -111,11 +96,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
-                href="https://virgil-n.github.io/zh/page/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="de"
                 href="https://virgil-n.github.io/de/page/"
                 />
@@ -126,11 +106,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://virgil-n.github.io/en/page/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://virgil-n.github.io/zh/page/about/"
                 />
     <xhtml:link
                 rel="alternate"
