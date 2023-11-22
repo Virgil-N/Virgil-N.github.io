@@ -19,6 +19,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="zh"
+                href="https://virgil-n.github.io/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="de"
                 href="https://virgil-n.github.io/de/"
                 />
@@ -29,6 +34,11 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://virgil-n.github.io/en/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://virgil-n.github.io/zh/blog/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -50,21 +60,39 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="zh"
+                href="https://virgil-n.github.io/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="de"
                 href="https://virgil-n.github.io/de/categories/"
                 />
   </url><url>
-    <loc>https://virgil-n.github.io/de/tags/dialoge/</loc>
-    <lastmod>2023-11-22T14:25:34+08:00</lastmod>
-  </url><url>
     <loc>https://virgil-n.github.io/de/categories/leben/</loc>
     <lastmod>2023-11-22T14:25:34+08:00</lastmod>
   </url><url>
+    <loc>https://virgil-n.github.io/de/blog/22.11.2023/</loc>
+    <lastmod>2023-11-22T11:33:28+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://virgil-n.github.io/zh/blog/22.11.2023/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://virgil-n.github.io/de/blog/22.11.2023/"
+                />
+  </url><url>
+    <loc>https://virgil-n.github.io/de/tags/deutsch/</loc>
+    <lastmod>2023-11-22T11:33:28+08:00</lastmod>
+  </url><url>
     <loc>https://virgil-n.github.io/de/categories/lernen/</loc>
-    <lastmod>2023-11-22T14:25:34+08:00</lastmod>
+    <lastmod>2023-11-22T11:33:28+08:00</lastmod>
   </url><url>
     <loc>https://virgil-n.github.io/de/tags/</loc>
-    <lastmod>2023-11-22T14:25:34+08:00</lastmod>
+    <lastmod>2023-11-22T11:33:28+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -77,15 +105,14 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="zh"
+                href="https://virgil-n.github.io/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="de"
                 href="https://virgil-n.github.io/de/tags/"
                 />
-  </url><url>
-    <loc>https://virgil-n.github.io/de/blog/22.11.2023/</loc>
-    <lastmod>2023-11-22T11:33:28+08:00</lastmod>
-  </url><url>
-    <loc>https://virgil-n.github.io/de/tags/meinungen/</loc>
-    <lastmod>2023-11-22T11:33:28+08:00</lastmod>
   </url><url>
     <loc>https://virgil-n.github.io/de/page/</loc>
     <lastmod>2022-05-27T14:55:57+08:00</lastmod>
@@ -93,6 +120,11 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://virgil-n.github.io/en/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://virgil-n.github.io/zh/page/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -106,6 +138,11 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://virgil-n.github.io/en/page/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://virgil-n.github.io/zh/page/about/"
                 />
     <xhtml:link
                 rel="alternate"

@@ -15,6 +15,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="zh"
+                href="https://virgil-n.github.io/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="https://virgil-n.github.io/fr/categories/"
                 />
@@ -32,6 +37,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="zh"
+                href="https://virgil-n.github.io/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="https://virgil-n.github.io/fr/"
                 />
@@ -46,6 +56,11 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://virgil-n.github.io/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://virgil-n.github.io/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
