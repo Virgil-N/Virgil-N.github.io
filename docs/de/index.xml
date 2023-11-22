@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blist (mehrsprachig)</title>
+    <title>einer schönen Tag</title>
     <link>https://virgil-n.github.io/de/</link>
-    <description>Recent content on Blist (mehrsprachig)</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://virgil-n.github.io/de/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content on einer schönen Tag</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 22 Nov 2023 14:25:34 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>23.11.2023</title>
+      <link>https://virgil-n.github.io/de/blog/23.11.2023/</link>
+      <pubDate>Wed, 22 Nov 2023 14:25:34 +0800</pubDate>
+      
+      <guid>https://virgil-n.github.io/de/blog/23.11.2023/</guid>
+      <description>Hallo, ich bin neu hier. Ich wünsche mir hier wohlfühlen.</description>
+    </item>
+    
+    <item>
+      <title>22.11.2023</title>
+      <link>https://virgil-n.github.io/de/blog/22.11.2023/</link>
+      <pubDate>Wed, 22 Nov 2023 11:33:28 +0800</pubDate>
+      
+      <guid>https://virgil-n.github.io/de/blog/22.11.2023/</guid>
+      <description>Ich will an der nächsten Wochenende ein Geschenk online kaufen für mich.</description>
+    </item>
+    
+    <item>
+      <title>Über mich</title>
+      <link>https://virgil-n.github.io/de/page/about/</link>
+      <pubDate>Fri, 27 May 2022 14:55:57 +0800</pubDate>
+      
+      <guid>https://virgil-n.github.io/de/page/about/</guid>
+      <description>Hallo, ich bin Virgil N. Ich habe die Späße an Bücher lesen, Filme sehen und Musik hören.</description>
+    </item>
+    
   </channel>
 </rss>

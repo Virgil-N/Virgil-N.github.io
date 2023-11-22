@@ -3,10 +3,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="icon" href="/favicon.svg">
+  <link rel="icon" href="/colors.ico">
 
   <title>
-    Rust学习之异步1 - 在地球
+    Rust学习之异步1 - einer schönen Tag
   </title>
   <meta name="description" content="了解Rust异步基础" /><meta name="generator" content="Hugo 0.101.0" /><link
     rel="stylesheet"
@@ -37,7 +37,7 @@
 <body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container relative flex flex-wrap justify-between gap-4 p-6 mx-auto md:justify-between">
   <a href="https://virgil-n.github.io/zh/" class="text-2xl font-extrabold capitalize">
     
-    <img src="/blist-logo.png" alt="在地球" class="h-8 max-w-full" />
+    <img src="/tower.jpg" alt="einer schönen Tag" class="h-8 max-w-full" />
     
   </a>
   <button class="mobile-menu-button md:hidden">
@@ -61,23 +61,39 @@
 
     
     
-    <li class="flex items-center">
-      
-      
-      
-      
-      <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5"
-        stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <circle cx="12" cy="12" r="9" />
-        <line x1="3.6" y1="9" x2="20.4" y2="9" />
-        <line x1="3.6" y1="15" x2="20.4" y2="15" />
-        <path d="M11.5 3a17 17 0 0 0 0 18" />
-        <path d="M12.5 3a17 17 0 0 1 0 18" />
-      </svg>
-      <a href="/en" lang="en">English</a>
-      
-      
+    <li class="relative cursor-pointer">
+      <span class="flex items-center gap-2 language-switcher">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="9" />
+          <line x1="3.6" y1="9" x2="20.4" y2="9" />
+          <line x1="3.6" y1="15" x2="20.4" y2="15" />
+          <path d="M11.5 3a17 17 0 0 0 0 18" />
+          <path d="M12.5 3a17 17 0 0 1 0 18" />
+        </svg>
+        <a>语言</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
+        </svg>
+      </span>
+      <div
+        class="absolute left-0 z-10 flex-col hidden gap-2 mt-2 bg-gray-100 language-dropdown top-full dark:bg-gray-900 dark:text-white">
+        
+        
+        <a class="px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-700" href="/en" lang="en">English</a>
+        
+        
+        
+        <a class="px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-700" href="/de" lang="de">Deutsch</a>
+        
+        
+        
+        
+      </div>
     </li>
     
     
@@ -299,8 +315,8 @@ system ended: 2022-07-11 12:27:48 .206</p>
   </article><div class="bg-blue-100 dark:bg-gray-900">
   <div class="container px-6 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <div>
-      <div class="text-2xl font-bold mb-2">Follow me</div>
-      <p class="opacity-60">Living on earth in the name of Free Man</p>
+      <div class="text-2xl font-bold mb-2">Kommt mit</div>
+      <p class="opacity-60">Habt einen schönen Tag.</p>
     </div>
     <ul class="flex justify-center gap-4">
       
@@ -449,6 +465,21 @@ system ended: 2022-07-11 12:27:48 .206</p>
 
 
 
+
+<script>
+  const languageMenuButton = document.querySelector('.language-switcher');
+  const languageDropdown = document.querySelector('.language-dropdown');
+  languageMenuButton.addEventListener('click', (evt) => {
+    evt.preventDefault()
+    if (languageDropdown.classList.contains('hidden')) {
+      languageDropdown.classList.remove('hidden')
+      languageDropdown.classList.add('flex')
+    } else {
+      languageDropdown.classList.add('hidden');
+      languageDropdown.classList.remove('flex');
+    }
+  })
+</script>
 
 
 

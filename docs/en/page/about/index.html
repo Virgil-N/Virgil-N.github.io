@@ -3,13 +3,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="icon" href="/favicon.svg">
+  <link rel="icon" href="/colors.ico">
 
   <title>
-    About Me - 在地球
+    About Me - einer schönen Tag
   </title>
   <meta name="description" content="爱看书、美剧、电影，热爱生活，关注互联网流行技术。" />
-  <meta name="keywords" content="about-us,about-hugo,contact" />
+  <meta name="keywords" content="about me" />
   <meta name="generator" content="Hugo 0.101.0" /><link
     rel="stylesheet"
     href="https://virgil-n.github.io/css/styles.min.198e036e07f9315c64ac8148645b37db60243e6e5206ead92c979b3286f18468.css"
@@ -39,7 +39,7 @@
 <body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container relative flex flex-wrap justify-between gap-4 p-6 mx-auto md:justify-between">
   <a href="https://virgil-n.github.io/en/" class="text-2xl font-extrabold capitalize">
     
-    <img src="/blist-logo.png" alt="在地球" class="h-8 max-w-full" />
+    <img src="/tower.jpg" alt="einer schönen Tag" class="h-8 max-w-full" />
     
   </a>
   <button class="mobile-menu-button md:hidden">
@@ -60,28 +60,42 @@
     
     <li><a href="/en/page/about/">About</a></li>
     
-    <li><a href="/en/blog/emoji-support/">Top Post</a></li>
-    
 
     
     
-    <li class="flex items-center">
-      
-      
-      <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5"
-        stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <circle cx="12" cy="12" r="9" />
-        <line x1="3.6" y1="9" x2="20.4" y2="9" />
-        <line x1="3.6" y1="15" x2="20.4" y2="15" />
-        <path d="M11.5 3a17 17 0 0 0 0 18" />
-        <path d="M12.5 3a17 17 0 0 1 0 18" />
-      </svg>
-      <a href="/zh" lang="zh">简体中文</a>
-      
-      
-      
-      
+    <li class="relative cursor-pointer">
+      <span class="flex items-center gap-2 language-switcher">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="9" />
+          <line x1="3.6" y1="9" x2="20.4" y2="9" />
+          <line x1="3.6" y1="15" x2="20.4" y2="15" />
+          <path d="M11.5 3a17 17 0 0 0 0 18" />
+          <path d="M12.5 3a17 17 0 0 1 0 18" />
+        </svg>
+        <a>Language</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
+        </svg>
+      </span>
+      <div
+        class="absolute left-0 z-10 flex-col hidden gap-2 mt-2 bg-gray-100 language-dropdown top-full dark:bg-gray-900 dark:text-white">
+        
+        
+        
+        
+        <a class="px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-700" href="/de" lang="de">Deutsch</a>
+        
+        
+        
+        <a class="px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-700" href="/zh" lang="zh">简体中文</a>
+        
+        
+      </div>
     </li>
     
     
@@ -149,7 +163,7 @@
         
       
       
-      &nbsp;&bull;&nbsp;Other languages: &nbsp;<a href="https://virgil-n.github.io/zh/page/about/" lang="zh">简体中文</a>
+      &nbsp;&bull;&nbsp;Other languages: &nbsp;<a href="https://virgil-n.github.io/de/page/about/" lang="de">Deutsch</a>, <a href="https://virgil-n.github.io/zh/page/about/" lang="zh">简体中文</a>
     </h5>
 
     <p>爱看书、美剧、电影，热爱生活，关注互联网流行技术。</p>
@@ -157,8 +171,8 @@
   </article><div class="bg-blue-100 dark:bg-gray-900">
   <div class="container px-6 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <div>
-      <div class="text-2xl font-bold mb-2">Follow me</div>
-      <p class="opacity-60">Living on earth in the name of Free Man</p>
+      <div class="text-2xl font-bold mb-2">Kommt mit</div>
+      <p class="opacity-60">Habt einen schönen Tag.</p>
     </div>
     <ul class="flex justify-center gap-4">
       
@@ -307,6 +321,21 @@
 
 
 
+
+<script>
+  const languageMenuButton = document.querySelector('.language-switcher');
+  const languageDropdown = document.querySelector('.language-dropdown');
+  languageMenuButton.addEventListener('click', (evt) => {
+    evt.preventDefault()
+    if (languageDropdown.classList.contains('hidden')) {
+      languageDropdown.classList.remove('hidden')
+      languageDropdown.classList.add('flex')
+    } else {
+      languageDropdown.classList.add('hidden');
+      languageDropdown.classList.remove('flex');
+    }
+  })
+</script>
 
 
 

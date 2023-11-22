@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Blist (mehrsprachig)</title>
+    <title>Tags on einer schönen Tag</title>
     <link>https://virgil-n.github.io/de/tags/</link>
-    <description>Recent content in Tags on Blist (mehrsprachig)</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://virgil-n.github.io/de/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Tags on einer schönen Tag</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 22 Nov 2023 14:25:34 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/de/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dialoge</title>
+      <link>https://virgil-n.github.io/de/tags/dialoge/</link>
+      <pubDate>Wed, 22 Nov 2023 14:25:34 +0800</pubDate>
+      
+      <guid>https://virgil-n.github.io/de/tags/dialoge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meinungen</title>
+      <link>https://virgil-n.github.io/de/tags/meinungen/</link>
+      <pubDate>Wed, 22 Nov 2023 11:33:28 +0800</pubDate>
+      
+      <guid>https://virgil-n.github.io/de/tags/meinungen/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
