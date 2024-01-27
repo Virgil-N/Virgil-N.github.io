@@ -5,43 +5,6 @@
     <link>https://virgil-n.github.io/zh/categories/</link>
     <description>Recent content in Categories on einer schönen Tag</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Wed, 22 Nov 2023 11:33:28 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>life</title>
-      <link>https://virgil-n.github.io/zh/categories/life/</link>
-      <pubDate>Wed, 22 Nov 2023 11:33:28 +0800</pubDate>
-      
-      <guid>https://virgil-n.github.io/zh/categories/life/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GUI</title>
-      <link>https://virgil-n.github.io/zh/categories/gui/</link>
-      <pubDate>Sun, 11 Dec 2022 22:27:04 +0800</pubDate>
-      
-      <guid>https://virgil-n.github.io/zh/categories/gui/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rust</title>
-      <link>https://virgil-n.github.io/zh/categories/rust/</link>
-      <pubDate>Fri, 02 Dec 2022 17:41:03 +0800</pubDate>
-      
-      <guid>https://virgil-n.github.io/zh/categories/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>生活</title>
-      <link>https://virgil-n.github.io/zh/categories/%E7%94%9F%E6%B4%BB/</link>
-      <pubDate>Thu, 10 Nov 2022 20:58:35 +0800</pubDate>
-      
-      <guid>https://virgil-n.github.io/zh/categories/%E7%94%9F%E6%B4%BB/</guid>
-      <description></description>
-    </item>
-    
+    <language>zh-CN</language><atom:link href="https://virgil-n.github.io/zh/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

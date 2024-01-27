@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://virgil-n.github.io/de/blog/23.11.2023/</loc>
-    <lastmod>2023-11-22T14:25:34+08:00</lastmod>
+    <loc>https://virgil-n.github.io/de/blog/27.1.2024/</loc>
+    <lastmod>2024-01-27T20:48:47+08:00</lastmod>
   </url><url>
     <loc>https://virgil-n.github.io/de/</loc>
-    <lastmod>2023-11-22T14:25:34+08:00</lastmod>
+    <lastmod>2024-01-27T20:48:47+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://virgil-n.github.io/de/blog/</loc>
-    <lastmod>2023-11-22T14:25:34+08:00</lastmod>
+    <lastmod>2024-01-27T20:48:47+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -47,7 +47,7 @@
                 />
   </url><url>
     <loc>https://virgil-n.github.io/de/categories/</loc>
-    <lastmod>2023-11-22T14:25:34+08:00</lastmod>
+    <lastmod>2024-01-27T20:48:47+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -70,20 +70,13 @@
                 />
   </url><url>
     <loc>https://virgil-n.github.io/de/categories/leben/</loc>
+    <lastmod>2024-01-27T20:48:47+08:00</lastmod>
+  </url><url>
+    <loc>https://virgil-n.github.io/de/blog/23.11.2023/</loc>
     <lastmod>2023-11-22T14:25:34+08:00</lastmod>
   </url><url>
     <loc>https://virgil-n.github.io/de/blog/22.11.2023/</loc>
     <lastmod>2023-11-22T11:33:28+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://virgil-n.github.io/zh/blog/22.11.2023/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://virgil-n.github.io/de/blog/22.11.2023/"
-                />
   </url><url>
     <loc>https://virgil-n.github.io/de/tags/deutsch/</loc>
     <lastmod>2023-11-22T11:33:28+08:00</lastmod>
