@@ -5,7 +5,7 @@ description: "cfg宏的学习"
 categories: ["Rust"]
 tags: ["cfg!", "宏"]
 thumbnail: "/blog-post.jpg"
-draft: false
+draft: true
 ---
 
 我们可以使用`cfg!`宏来告诉编译器当前的配置条件。常用的有：

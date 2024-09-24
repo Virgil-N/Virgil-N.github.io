@@ -5,7 +5,7 @@ description: "简单分清各种注释"
 categories: ["Rust"]
 tags: ["注释"]
 thumbnail: "/blog-post.jpg"
-draft: false
+draft: true
 ---
 
 `rust`注释学习。
@@ -29,4 +29,4 @@ draft: false
 |普通注释|外部文档注释|内部文档注释|
 | --- | --- | --- |
 |//|///|//!|
-|/**/|/** */|/*! */|
+|/**/|/** */|/*!*/|

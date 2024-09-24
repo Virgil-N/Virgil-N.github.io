@@ -5,7 +5,7 @@ description: "egui简单尝试"
 categories: ["GUI"]
 tags: ["egui"]
 thumbnail: "/blog-post.jpg"
-draft: false
+draft: true
 ---
 
 最近因为某些原因在家🙄，闲时尝试了下egui这个库。感觉是蛮简单的。

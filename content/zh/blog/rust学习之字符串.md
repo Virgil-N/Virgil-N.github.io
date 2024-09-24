@@ -5,7 +5,7 @@ description: "Rust字符串学习中遇到的注意点"
 categories: ["Rust"]
 tags: ["字符串"]
 thumbnail: /blog-post.jpg
-draft: false
+draft: true
 ---
 
 今天学习rust字符串的`push_str`方法时发现了一个隐藏的隐患:

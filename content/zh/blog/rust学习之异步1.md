@@ -5,7 +5,7 @@ description: "了解Rust异步基础"
 categories: ["Rust"]
 tags: ["异步"]
 thumbnail: "/blog-post.jpg"
-draft: false
+draft: true
 ---
 
 `rust`异步机制学习。
