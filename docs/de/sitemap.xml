@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://virgil-n.github.io/de/</loc>
-    <lastmod>2024-09-23T21:44:53+08:00</lastmod>
+    <lastmod>2024-09-24T17:25:53+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -26,7 +26,7 @@
                 />
   </url><url>
     <loc>https://virgil-n.github.io/de/blog/</loc>
-    <lastmod>2024-09-23T21:44:53+08:00</lastmod>
+    <lastmod>2024-09-24T17:25:53+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,11 +43,11 @@
                 href="https://virgil-n.github.io/de/blog/"
                 />
   </url><url>
+    <loc>https://virgil-n.github.io/de/blog/note/</loc>
+    <lastmod>2024-09-24T17:25:53+08:00</lastmod>
+  </url><url>
     <loc>https://virgil-n.github.io/de/blog/something/</loc>
     <lastmod>2024-09-23T21:44:53+08:00</lastmod>
-  </url><url>
-    <loc>https://virgil-n.github.io/de/blog/note_1/</loc>
-    <lastmod>2024-09-23T21:17:54+08:00</lastmod>
   </url><url>
     <loc>https://virgil-n.github.io/de/blog/23.09.2024/</loc>
     <lastmod>2024-09-23T20:37:32+08:00</lastmod>
