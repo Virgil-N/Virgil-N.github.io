@@ -1,58 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>在地球</title>
+    <title>einer schönen Tag</title>
     <link>https://virgil-n.github.io/zh/</link>
-    <description>Recent content on 在地球</description>
+    <description>Recent content on einer schönen Tag</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 11 Oct 2022 21:34:09 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Rust学习之注释</title>
-      <link>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E6%B3%A8%E9%87%8A/</link>
-      <pubDate>Tue, 11 Oct 2022 21:34:09 +0800</pubDate>
-      
-      <guid>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E6%B3%A8%E9%87%8A/</guid>
-      <description>rust注释学习。
-普通注释
-// 单行注释 /* */ 多行注释 文档注释
-/// 单行外部文档注释 /** */ 多行外部文档注释 //! 单行内部文档注释 /*! */ 多行内部文档注释 外部文档注释一般写在代码块前面，内部文档注意一般写在代码块内部。
-注意: crate注释必须使用内部文档注释
-普通注释 外部文档注释 内部文档注释 // /// //! /**/ /** */ /*! */ </description>
-    </item>
-    
-    <item>
-      <title>Rust学习之异步1</title>
-      <link>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%BC%82%E6%AD%A51/</link>
-      <pubDate>Mon, 11 Jul 2022 11:25:36 +0800</pubDate>
-      
-      <guid>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%BC%82%E6%AD%A51/</guid>
-      <description>rust异步机制学习。
-tokio的线程必须在runtime中运行。 公用代码
-use chrono::Local; pub fn now() -&amp;gt; String { Local::now().format(&amp;#34;%F %T&amp;#34;).to_string() } 案例代码
-fn main() { println!(&amp;#34;system here&amp;#34;); // rust的线程正常运行 std::thread::spawn(|| { std::thread::sleep(std::time::Duration::from_secs(1)); println!(&amp;#34;thread out block_on: {}&amp;#34;, now()); }); // 报错，只能在tokio的runtime中运行 // tokio::spawn(async { // std::thread::sleep(std::time::Duration::from_secs(1)); // println!(&amp;#34;thread out block_on: {}&amp;#34;, now()); // }); std::thread::sleep(std::time::Duration::from_secs(3)); println!(&amp;#34;system ended: {}&amp;#34;, Local::now().format(&amp;#34;%F %T .%3f&amp;#34;)); } 运行结果(注意打印时间间隔为2秒):
-system here
-thread out block_on: 2022-07-11 12:40:54
-system ended: 2022-07-11 12:40:56 .478
-block_on是阻塞的，而enter是非阻塞的(注意查看以下四段代码的运行结果)。 fn main() { let rt1 = tokio::runtime::Runtime::new().</description>
-    </item>
-    
-    <item>
-      <title>Rust学习之字符串</title>
-      <link>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
-      <pubDate>Tue, 31 May 2022 14:55:57 +0800</pubDate>
-      
-      <guid>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
-      <description>今天学习rust字符串的push_str方法时发现了一个隐藏的隐患:
-先声明一个&amp;amp;str类型不可变变量 调用此变量的to_string方法并后续直接调用push_str方法 打印此变量 发现变量的值未发生变化，这不是我们想要的， 其实不是这样的，因为to_string方法返回了一个新的String类型，他才是push_str方法的调用者，而s没有发生任何变化，所以最后我们打印的还是“美国”，而且从声明变量时没有加mut而编译器未报错就可以看出，s的值并没有改变。
-let s = &amp;#34;美国&amp;#34;; s.to_string().push_str(&amp;#34;众神&amp;#34;); println!(&amp;#34;{}&amp;#34;, s); // 美国 中间声明一个可变变量，然后再调用push_str方法
-let s = &amp;#34;德国&amp;#34;; let mut s2 = s.to_string(); s2.push_str(&amp;#34;希特勒&amp;#34;); println!(&amp;#34;s2: {}&amp;#34;, s2); // 德国希特勒 啊，过了几天再看自己之前写的这篇文章，感觉好low啊！😂
-rust中切片是大小不确定的，无法直接使用，但是切片引用是大小固定的，可以使用。
-切片 切片饮用 str &amp;amp;str [..] &amp;amp;[..] 切片&amp;amp;str虽然可以安全使用，但是，我们很难动态修改其内容 —— 其地址、长度都是固定的。于是 rust 提供了数据类型String。
-String包含了数据指针、数组容量、数据长度等三个字段。如果新修改的数据长度在其容量范围内，数据可以原地修改。如果新修改的数据长度超出了容量范围，它可以重新申请更大的内存。
-于是我们看到，String和&amp;amp;str是两个完全不一样的结构体。为什么字符串要保留这两种形式？原因就是效率。rust希望在数组容量不会变化的时候，用&amp;amp;str。在数组长度可能发生变化的情况下，使用 String。</description>
-    </item>
-    
+    <lastBuildDate>Fri, 27 May 2022 14:55:57 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于我</title>
       <link>https://virgil-n.github.io/zh/page/about/</link>

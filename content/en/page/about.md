@@ -6,7 +6,7 @@ categories: [""]
 tags: [""]
 thumbnail: "/about-me.jpg"
 draft: false
-keywords: ["about-us", "about-hugo", "contact"]
+keywords: ["about me"]
 type: about
 ---
 

@@ -1,38 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 在地球</title>
+    <title>Tags on einer schönen Tag</title>
     <link>https://virgil-n.github.io/zh/tags/</link>
-    <description>Recent content in Tags on 在地球</description>
+    <description>Recent content in Tags on einer schönen Tag</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Tue, 11 Oct 2022 21:34:09 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>注释</title>
-      <link>https://virgil-n.github.io/zh/tags/%E6%B3%A8%E9%87%8A/</link>
-      <pubDate>Tue, 11 Oct 2022 21:34:09 +0800</pubDate>
-      
-      <guid>https://virgil-n.github.io/zh/tags/%E6%B3%A8%E9%87%8A/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>异步</title>
-      <link>https://virgil-n.github.io/zh/tags/%E5%BC%82%E6%AD%A5/</link>
-      <pubDate>Mon, 11 Jul 2022 11:25:36 +0800</pubDate>
-      
-      <guid>https://virgil-n.github.io/zh/tags/%E5%BC%82%E6%AD%A5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>字符串</title>
-      <link>https://virgil-n.github.io/zh/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
-      <pubDate>Tue, 31 May 2022 14:55:57 +0800</pubDate>
-      
-      <guid>https://virgil-n.github.io/zh/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
-      <description></description>
-    </item>
-    
+    <language>zh-CN</language><atom:link href="https://virgil-n.github.io/zh/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
