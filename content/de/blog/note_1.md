@@ -5,7 +5,7 @@ description: ""
 categories: [""]
 tags: [""]
 thumbnail: "/blog-post.jpg"
-draft: true
+draft: false
 ---
 
 
