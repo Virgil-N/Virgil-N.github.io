@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on einer schönen Tag</title>
-    <link>http://localhost:1313/zh/page/</link>
+    <link>https://virgil-n.github.io/zh/page/</link>
     <description>Recent content in Pages on einer schönen Tag</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 27 May 2022 14:55:57 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://virgil-n.github.io/zh/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于我</title>
-      <link>http://localhost:1313/zh/page/about/</link>
+      <link>https://virgil-n.github.io/zh/page/about/</link>
       <pubDate>Fri, 27 May 2022 14:55:57 +0800</pubDate>
-      <guid>http://localhost:1313/zh/page/about/</guid>
+      <guid>https://virgil-n.github.io/zh/page/about/</guid>
       <description>&lt;p&gt;爱看书、美剧、电影，热爱生活，关注互联网流行技术。&lt;/p&gt;</description>
     </item>
   </channel>
