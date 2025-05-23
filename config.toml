@@ -16,7 +16,7 @@ weight = 1
 languageName = "English"
 [languages.en.params]
 introTitle = "Hey! I'm Virgil N."
-introSubtitle = "junior developer who enjoys reading, movies and outdoor activities, focus in Internet technologies"
+introSubtitle = "junior developer who enjoys reading, movies and outdoor activities, focus in Internet technologies. My website is <a href='https://virgil-n.netlify.app'>https://virgil-n.netlify.app</a>"
 introPhoto = "/avator.jpg"
 logo = "/tower.jpg"
 [[languages.en.menu.main]]
