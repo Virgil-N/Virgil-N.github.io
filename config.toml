@@ -16,7 +16,7 @@ weight = 1
 languageName = "English"
 [languages.en.params]
 introTitle = "Hey! I'm Virgil N."
-introSubtitle = "junior developer who enjoys reading, movies and outdoor activities, focus in Internet technologies. My website is <a href='https://virgil-n.netlify.app'>https://virgil-n.netlify.app</a>"
+introSubtitle = "junior developer who enjoys reading, movies and outdoor activities, focus in Internet technologies. My website is <a href='https://virgil-n.netlify.app' target='_blank' rel='noopener noreferrer'>https://virgil-n.netlify.app</a>"
 introPhoto = "/avator.jpg"
 logo = "/tower.jpg"
 [[languages.en.menu.main]]
@@ -52,7 +52,7 @@ title = "Blist (mehrsprachig)"
 description = "Modernes Blog-Theme für Ihre Hugo-Site."
 [languages.de.params]
 introTitle = "Hallo, ich bin Virgil N."
-introSubtitle = "Ich habe die Späße an Bücher lesen, Filme sehen und Musik hören. Meine WebSeite ist <a href='https://virgil-n.netlify.app'>https://virgil-n.netlify.app</a>"
+introSubtitle = "Ich habe die Späße an Bücher lesen, Filme sehen und Musik hören. Meine WebSeite ist <a href='https://virgil-n.netlify.app' target='_blank' rel='noopener noreferrer'>https://virgil-n.netlify.app</a>"
 introPhoto = "/avator.jpg"
 logo = "/tower.jpg"
 [[languages.de.menu.main]]
@@ -81,7 +81,7 @@ weight = 3
 languageName = "Français"
 [languages.fr.params]
 introTitle = "Salut! Je suis Katheryn Fox"
-introSubtitle = "Développeuse junior de 26 ans qui adore les jeux de société, le blogging et la peinture. My website is <a href='https://virgil-n.netlify.app'>https://virgil-n.netlify.app</a>"
+introSubtitle = "Développeuse junior de 26 ans qui adore les jeux de société, le blogging et la peinture. My website is <a href='https://virgil-n.netlify.app' target='_blank' rel='noopener noreferrer'>https://virgil-n.netlify.app</a>"
 introPhoto = "/avator.jpg"
 logo = "/tower.jpg"
 [[languages.fr.menu.main]]
@@ -106,7 +106,7 @@ languageCode = 'zh-CN'
 languageName = "简体中文"
 [languages.zh.params]
 introTitle = "嗨! 我是樛木"
-introSubtitle = "爱看书、美剧、电影，热爱生活，关注互联网流行技术。我的网站地址是 <a href='https://virgil-n.netlify.app'>https://virgil-n.netlify.app</a>"
+introSubtitle = "爱看书、美剧、电影，热爱生活，关注互联网流行技术。我的网站地址是 <a href='https://virgil-n.netlify.app' target='_blank' rel='noopener noreferrer'>https://virgil-n.netlify.app</a>"
 introPhoto = "/avator.jpg"
 logo = "/tower.jpg"
 [[languages.zh.menu.main]]
@@ -146,13 +146,13 @@ enableSearch = true
 # may slowdown the loading of search results
 # Title of page is included by default
 searchKeys = [
-  "tags",
-  "date",
-  "categories",
-  "summary",
-  "content",
-  "link",
-  "author",
+    "tags",
+    "date",
+    "categories",
+    "summary",
+    "content",
+    "link",
+    "author",
 ]
 
 # Custom copyright - optional

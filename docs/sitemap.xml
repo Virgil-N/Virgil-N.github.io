@@ -2,26 +2,26 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>https://virgil-n.github.io/de/sitemap.xml</loc>
+    <loc>http://localhost:1313/de/sitemap.xml</loc>
     
       <lastmod>2025-02-10T21:35:03+08:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>https://virgil-n.github.io/en/sitemap.xml</loc>
+    <loc>http://localhost:1313/en/sitemap.xml</loc>
     
       <lastmod>2022-05-27T14:55:57+08:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>https://virgil-n.github.io/fr/sitemap.xml</loc>
+    <loc>http://localhost:1313/fr/sitemap.xml</loc>
     
   </sitemap>
   
   <sitemap>
-    <loc>https://virgil-n.github.io/zh/sitemap.xml</loc>
+    <loc>http://localhost:1313/zh/sitemap.xml</loc>
     
       <lastmod>2023-11-22T11:33:28+08:00</lastmod>
     
