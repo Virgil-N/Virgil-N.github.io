@@ -5,7 +5,7 @@ theme = 'blist'
 
 publishDir = 'docs'
 buildDrafts = false
-DefaultContentLanguage = "de"
+DefaultContentLanguage = "zh"
 DefaultContentLanguageInSubdir = true
 
 [languages]
@@ -45,7 +45,7 @@ weight = 4
 # weight = 5
 
 [languages.de]
-contentDir = "content/de"                               # Deutsch
+contentDir = "content/de" # Deutsch
 weight = 2
 languageName = "Deutsch"
 title = "Blist (mehrsprachig)"
@@ -145,15 +145,7 @@ enableSearch = true
 # Below are the supported options; Note that including entire content
 # may slowdown the loading of search results
 # Title of page is included by default
-searchKeys = [
-    "tags",
-    "date",
-    "categories",
-    "summary",
-    "content",
-    "link",
-    "author",
-]
+searchKeys = ["tags", "date", "categories", "summary", "content", "link", "author"]
 
 # Custom copyright - optional
 copyright = "Copyright © 2021 - Katheryn Fox · All rights reserved"
