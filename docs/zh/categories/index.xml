@@ -10,6 +10,15 @@
 		
 		
 		
+			<lastBuildDate>Sat, 26 Nov 2022 15:28:59 +0800</lastBuildDate>
+		
 			<atom:link href="https://virgil-n.github.io/zh/categories/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Rust</title>
+				<link>https://virgil-n.github.io/zh/categories/rust/</link>
+				<pubDate>Sat, 26 Nov 2022 15:28:59 +0800</pubDate>
+				<guid>https://virgil-n.github.io/zh/categories/rust/</guid>
+				<description></description>
+			</item>
 	</channel>
 </rss>

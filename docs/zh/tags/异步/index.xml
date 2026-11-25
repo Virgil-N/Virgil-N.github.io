@@ -1,36 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>异步 on einer schönen Tag</title>
-    <link>https://virgil-n.github.io/zh/tags/%E5%BC%82%E6%AD%A5/</link>
-    <description>Recent content in 异步 on einer schönen Tag</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Mon, 11 Jul 2022 13:56:27 +0800</lastBuildDate><atom:link href="https://virgil-n.github.io/zh/tags/%E5%BC%82%E6%AD%A5/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Rust学习之异步2</title>
-      <link>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%BC%82%E6%AD%A52/</link>
-      <pubDate>Mon, 11 Jul 2022 13:56:27 +0800</pubDate>
-      
-      <guid>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%BC%82%E6%AD%A52/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rust学习之异步1</title>
-      <link>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%BC%82%E6%AD%A51/</link>
-      <pubDate>Mon, 11 Jul 2022 11:25:36 +0800</pubDate>
-      
-      <guid>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%BC%82%E6%AD%A51/</guid>
-      <description>rust异步机制学习。
-tokio的线程必须在runtime中运行。 公用代码
-use chrono::Local; pub fn now() -&amp;gt; String { Local::now().format(&amp;#34;%F %T&amp;#34;).to_string() } 案例代码
-fn main() { println!(&amp;#34;system here&amp;#34;); // rust的线程正常运行 std::thread::spawn(|| { std::thread::sleep(std::time::Duration::from_secs(1)); println!(&amp;#34;thread out block_on: {}&amp;#34;, now()); }); // 报错，只能在tokio的runtime中运行 // tokio::spawn(async { // std::thread::sleep(std::time::Duration::from_secs(1)); // println!(&amp;#34;thread out block_on: {}&amp;#34;, now()); // }); std::thread::sleep(std::time::Duration::from_secs(3)); println!(&amp;#34;system ended: {}&amp;#34;, Local::now().format(&amp;#34;%F %T .%3f&amp;#34;)); } 运行结果(注意打印时间间隔为2秒):
-system here
-thread out block_on: 2022-07-11 12:40:54
-system ended: 2022-07-11 12:40:56 .478
-block_on是阻塞的，而enter是非阻塞的(注意查看以下四段代码的运行结果)。 fn main() { let rt1 = tokio::runtime::Runtime::new().</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>异步 on einer schönen Tag</title>
+		<link>https://virgil-n.github.io/zh/tags/%E5%BC%82%E6%AD%A5/</link>
+		<description>Recent content in 异步 on einer schönen Tag</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 11 Jul 2022 11:25:36 +0800</lastBuildDate>
+		
+			<atom:link href="https://virgil-n.github.io/zh/tags/%E5%BC%82%E6%AD%A5/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Rust学习之异步1</title>
+				<link>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%BC%82%E6%AD%A51/</link>
+				<pubDate>Mon, 11 Jul 2022 11:25:36 +0800</pubDate>
+				<guid>https://virgil-n.github.io/zh/blog/rust%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%BC%82%E6%AD%A51/</guid>
+				<description>&lt;p&gt;&lt;code&gt;rust&lt;/code&gt;异步机制学习。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;tokio的线程必须在&lt;code&gt;runtime&lt;/code&gt;中运行。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;公用代码&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-rust&#34; data-lang=&#34;rust&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;use&lt;/span&gt; chrono::Local;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;pub&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;fn&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;now&lt;/span&gt;() -&amp;gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;String&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Local::now().format(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;%F %T&amp;#34;&lt;/span&gt;).to_string()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;案例代码&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-rust&#34; data-lang=&#34;rust&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;fn&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;main&lt;/span&gt;() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#50fa7b&#34;&gt;println!&lt;/span&gt;(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;system here&amp;#34;&lt;/span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#6272a4&#34;&gt;// rust的线程正常运行&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  std::thread::spawn(&lt;span style=&#34;color:#ff79c6&#34;&gt;||&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    std::thread::sleep(std::time::Duration::from_secs(&lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;));&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#50fa7b&#34;&gt;println!&lt;/span&gt;(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;thread out block_on: &lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;{}&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&lt;/span&gt;, now());&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  });&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#6272a4&#34;&gt;// 报错，只能在tokio的runtime中运行&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#6272a4&#34;&gt;// tokio::spawn(async {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#6272a4&#34;&gt;//   std::thread::sleep(std::time::Duration::from_secs(1));&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#6272a4&#34;&gt;//   println!(&amp;#34;thread out block_on: {}&amp;#34;, now());&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#6272a4&#34;&gt;// });&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  std::thread::sleep(std::time::Duration::from_secs(&lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;));&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#50fa7b&#34;&gt;println!&lt;/span&gt;(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;system ended: &lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;{}&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&lt;/span&gt;, Local::now().format(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;%F %T .%3f&amp;#34;&lt;/span&gt;));&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;&#xA;&lt;p&gt;运行结果(注意打印时间间隔为2秒):&lt;br&gt;&#xA;system here&lt;br&gt;&#xA;thread out block_on: 2022-07-11 12:40:54&lt;br&gt;&#xA;system ended: 2022-07-11 12:40:56 .478&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -5,7 +5,7 @@ description: "了解Rust异步基础"
 categories: ["Rust"]
 tags: ["异步"]
 thumbnail: "/blog-post.jpg"
-draft: true
+draft: false
 ---
 
 `rust`异步机制学习。
@@ -45,9 +45,9 @@ fn main() {
 ```
 
 > 运行结果(注意打印时间间隔为2秒):  
-system here  
-thread out block_on: 2022-07-11 12:40:54  
-system ended: 2022-07-11 12:40:56 .478
+> system here  
+> thread out block_on: 2022-07-11 12:40:54  
+> system ended: 2022-07-11 12:40:56 .478
 
 - `block_on`是阻塞的，而`enter`是非阻塞的(注意查看以下四段代码的运行结果)。
 
@@ -69,12 +69,12 @@ fn main() {
 ```
 
 > 运行结果:  
-system here  
-system before: 2022-07-11 11:37:12 .374  
-system after: 2022-07-11 11:37:15 .377  
-system end start  
-system ending  
-system ended: 2022-07-11 11:37:15 .380
+> system here  
+> system before: 2022-07-11 11:37:12 .374  
+> system after: 2022-07-11 11:37:15 .377  
+> system end start  
+> system ending  
+> system ended: 2022-07-11 11:37:15 .380
 
 ```rust
 fn main() {
@@ -94,12 +94,12 @@ fn main() {
 ```
 
 > 运行结果  
-system here  
-tokio before: 2022-07-11 11:42:50 .247  
-tokio after: 2022-07-11 11:42:53 .254  
-system end start  
-system ending  
-system ended: 2022-07-11 11:42:53 .256
+> system here  
+> tokio before: 2022-07-11 11:42:50 .247  
+> tokio after: 2022-07-11 11:42:53 .254  
+> system end start  
+> system ending  
+> system ended: 2022-07-11 11:42:53 .256
 
 以下两个是非阻塞形式，但是由于`std::thread::sleep`会阻塞，所以线程任务可以完成，而`tokio::time::sleep`不会阻塞，想要完成线程任务必须让主线程等待相应的时长。
 
@@ -128,12 +128,12 @@ fn main() {
 ```
 
 > 运行结果  
-system here  
-system end start  
-system ending  
-system before: 2022-07-11 12:13:33 .299  
-system ended: 2022-07-11 12:13:33 .300  
-system after: 2022-07-11 12:13:36 .303
+> system here  
+> system end start  
+> system ending  
+> system before: 2022-07-11 12:13:33 .299  
+> system ended: 2022-07-11 12:13:33 .300  
+> system after: 2022-07-11 12:13:36 .303
 
 ```rust
 fn main() {
@@ -160,11 +160,11 @@ fn main() {
 ```
 
 > 运行结果  
-system here  
-system end start  
-tokio before: 2022-07-11 12:27:43 .195  
-tokio after: 2022-07-11 12:27:46 .202  
-system ending  
-system ended: 2022-07-11 12:27:48 .206
+> system here  
+> system end start  
+> tokio before: 2022-07-11 12:27:43 .195  
+> tokio after: 2022-07-11 12:27:46 .202  
+> system ending  
+> system ended: 2022-07-11 12:27:48 .206
 
 - 最后，使用`block_on`，代码是顺序执行的，而使用`enter`顺序不能保证一致。
